@@ -1,2 +1,2 @@
-# Sustainability
-Website for Website Sustainability.
+# Website Sustainability
+This is the Website for my research on Sustainable Web Design & Development.
