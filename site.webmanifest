@@ -1,0 +1,20 @@
+{
+	"short_name": "Sustainability",
+	"name": "Website Sustainability",
+	"description": "The web is a major source of carbon emissions. This site provides independent research to help web developers make their products more sustainable.",
+	"icons": [
+		{
+			"src": "images/droidx192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "images/droidx512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"theme_color": "#ffffff",
+	"background_color": "#ffffff",
+	"display": "standalone"
+}

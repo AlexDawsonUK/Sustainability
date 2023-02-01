@@ -1,0 +1,183 @@
+@font-face {
+	font-family:'Source Serif Pro';
+	src:local('Source Serif Pro Regular'),
+		url('fonts/SourceSerifPro-Regular.woff2') format('woff2'),
+		url('fonts/SourceSerifPro-Regular.woff') format('woff');
+	font-display: swap;
+}
+@font-face {
+	font-family:'Source Serif Pro';
+	src:local('Source Serif Pro Italic'),
+		url('fonts/SourceSerifPro-Italic.woff2') format('woff2'),
+		url('fonts/SourceSerifPro-Italic.woff') format('woff');
+	font-display: swap;
+	font-style: italic;
+}
+@font-face {
+	font-family:'Source Serif Pro';
+	src:local('Source Serif Pro SemiBold'),
+		url('fonts/SourceSerifPro-SemiBold.woff2') format('woff2'),
+		url('fonts/SourceSerifPro-SemiBold.woff') format('woff');
+	font-display: swap;
+	font-weight: 900;
+}
+@font-face {
+	font-family:'Source Serif Pro';
+	src:local('Source Serif Pro Bold'),
+		url('fonts/SourceSerifPro-Bold.woff2') format('woff2'),
+		url('fonts/SourceSerifPro-Bold.woff') format('woff');
+	font-display: swap;
+	font-weight: bold;
+}
+@media screen {
+	::selection { background-color: #333333; color: #f2f2f2; }
+	:target ~ .about, .hide, .page:not(:target) { height: 1px; left: -1000px; overflow: hidden; position: absolute; top: -1px; width: 1px; }
+	.t_show:target { height: auto; left: auto; overflow: auto; position: static; top: auto; width: auto; }
+	.header {
+		align-items: center;
+		grid-template-areas:
+        "logo heading nav"
+        "logo subtitle nav";
+		grid-template-columns: calc(100px + 2em) auto 1fr;
+		grid-template-rows: 1fr 1fr;
+		margin-bottom: 1em; }
+	.body {
+		background-color: #faeee7; }
+	.item a {
+		border: 2px solid transparent;
+		display: inline-block;
+		font-style: italic;
+		padding: 1.75em 1.25em; }
+	.head, .item a:hover {
+		border-color: #48ba80;
+		border-top-left-radius: 25px;
+		border-bottom-right-radius: 25px;
+		border-style: dotted;
+		border-width: 2px; }
+	.head {
+		color: #48ba80;
+		font-style: italic; }
+	.build a, .item a, .list a, .url {
+		color: inherit;
+		font-weight: 900;
+		text-decoration-color: #48ba80; }
+	.copyright:before {
+		content: "\00a9";
+		position: relative;
+		top: 0.15em; }
+	.copyright:before, .copyright span {
+		cursor: text; }
+	.build, .copyright, .footer, .nav ul {
+		display: flex; }
+	.header, .nav {
+		display: grid; }
+	.build, .copyright {
+		flex-basis: 50%;
+		justify-content: center; }
+	.build, .copyright, .error-head, .error-sub, .error-txt, .heading, .item, .list, .region, .head, .subtitle, .txt {
+		font-family: 'Source Serif Pro', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+	.item a, .list, .txt {
+		font-size: 1.2em; }
+	.error-sub, .region {
+		font-size: 1.5em; }
+	.error-head, .head {
+		font-size: 4em;
+		margin-bottom: 0; }
+	.heading {
+		grid-area: heading; }
+	.logo {
+		grid-area: logo;
+		margin-left: 1.5em; }
+	.nav {
+		grid-area: nav;
+		justify-items: end;
+		margin-right: 1.5em; }
+	.subtitle {
+		grid-area: subtitle; }
+	.logo svg {
+		height: 100px;
+		width: 100px; }
+	.txt {
+		line-height: 1.4;
+		padding-bottom: 1em; }
+	.list, .nav ul {
+		list-style-type: none; }
+	.head, .list, .txt {
+		margin: auto; }
+	h1 {
+		margin-bottom: 0; }
+	.t_show {
+		margin-bottom: 5em; }
+	p + h3, .subtitle {
+		margin-top: 0; }
+	.footer {
+		margin-top: 2em; }
+	.items:last-child {
+		padding-bottom: 0; }
+	.items {
+		padding-bottom: 1.5em; }
+	.head, .list, .txt {
+		max-width: 800px; }
+	.build a, .copyright span {
+		padding-left: 0.2em; }
+	.list {
+		padding-left: 0; }
+	.copyright:before {
+		padding-right: 0.2em;
+		margin-top: -0.15em; }
+	.error-head, .error-sub, .error-txt, .head, .region {
+		text-align: center; }
+}
+@media screen and (max-width: 760px) {
+	.header, .nav {
+		display: block; }
+	.nav ul {
+		justify-content: center; }
+	.nav {
+		margin: auto; }
+	.header {
+		text-align: center;
+	}
+}
+@media (prefers-color-scheme: dark) {
+	.body {
+		background-color: #121212; }
+	.build, .copyright, .heading, .inner, .item, .items, .region, .subtitle, .txt {
+		color: #dfdfdf; }
+}
+@media (prefers-reduced-motion: reduce), (update: slow) {
+	*:not(.safe-animation),
+	*:not(.safe-animation)::before,
+	*:not(.safe-animation)::after {
+		animation-delay: -1ms !important;
+		animation-duration: 1ms !important;
+		animation-iteration-count: 1 !important;
+		background-attachment: initial !important;
+		scroll-behavior: auto !important;
+		transition-delay: -1ms !important;
+		transition-duration: 1ms !important;
+	}
+}
+@media print {
+	.build a, .copy a {
+		color: #000000;
+		text-decoration: none; }
+	.copyright:before {
+		content: "\00a9";
+		padding-right: 0.2em; }
+	.build a::after, .copy a::after {
+		content: ": " attr(href); }
+	.footer {
+		display: flex;
+		justify-content: center; }
+	.nav {
+		display: none; }
+	.build, .copyright, .error-head, .error-sub, .error-txt, .heading, .region, .head, .subtitle, .txt {
+		font-family: Constantia, Palatino, 'Book Antiqua', 'Palatino Linotype', serif; }
+	.logo svg {
+		height: 100px;
+		width: 100px; }
+	.build, .copyright {
+		padding-left: 1em;
+		padding-right: 1em; }
+}
