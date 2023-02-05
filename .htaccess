@@ -15,14 +15,6 @@
 		Header set Access-Control-Allow-Origin "*"
 	</FilesMatch>
 </IfModule>
-# IE 8-10
-<IfModule mod_headers.c>
-	Header always set X-UA-Compatible "IE=edge" "expr=%{CONTENT_TYPE} =~ m#text/html#i"
-</IfModule>
-# Chrome FLoC
-<IfModule mod_headers.c>
-	Header always set Permissions-Policy: interest-cohort=()
-</IfModule>
 # Encoding
 AddDefaultCharset utf-8
 <IfModule mod_mime.c>
