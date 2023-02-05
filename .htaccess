@@ -123,7 +123,7 @@ FileETag None
 	ExpiresActive On
 	ExpiresDefault "access plus 1 month"
 		<FilesMatch "\.(txt|log|html|php|markdown|md|json|geojson|topojson|jsonld|manifest|webapp|appcache|webmanifest)$">
-		ExpiresDefault "access plus 0 seconds"
+		ExpiresDefault "access"
 	</FilesMatch>
 	<FilesMatch "\.(ic[os]|vcard|vcf|vtt|xml|atom|rss|rdf|kml)$">
 		ExpiresDefault "access plus 1 hour"
