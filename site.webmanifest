@@ -1,6 +1,7 @@
 {
 	"short_name": "Sustainability",
 	"name": "Website Sustainability",
+	"start_url": "https://websitesustainability.com",
 	"description": "The web is a major source of carbon emissions. This site provides independent research to help web developers make their products more sustainable.",
 	"icons": [
 		{
