@@ -17,7 +17,7 @@
 - favicon.ico File with PNG's for iOS, Android, etc.
 - site.webmanifest File & browserconfig.xml for PWA's.
 - sitemap.xml File with page listings and IA for site.
-- script.js File with Service Worker & linted, minified JavaScript.
+- script.js File with linted, minified JavaScript.
 
 ## [Guide]
 - Added: New features.
