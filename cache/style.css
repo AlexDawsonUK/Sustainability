@@ -132,7 +132,8 @@
 	.header, .nav {
 		display: block; }
 	.nav ul {
-		justify-content: center; }
+		justify-content: center;
+		padding-left: 0; }
 	.nav {
 		margin: auto; }
 	.header {
