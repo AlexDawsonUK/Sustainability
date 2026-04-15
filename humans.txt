@@ -1,6 +1,6 @@
-/* -------------------------------- */
-/* HiTechy SnipClip Website Credits */
-/* -------------------------------- */
+/* ------------------------------ */
+/* Website Sustainability Credits */
+/* ------------------------------ */
 
 /* TEAM */
 
@@ -16,7 +16,7 @@ Contact:	https://alexanderdawson.com/vcard.vcf
 Language:	English (US)
 Standards:	htaccess, TXT, HTML, XML, JSON, CSS, JS
 Components:	None
-Software:	VSCode, Affinity, Kanri, iTerm, UFocus, Typeface, Squoosh, Icon Slate, Pages
-Services:	Source Serif Pro (Typeface), Icon54 (Icons), Netlify, Porkbun
+Software:	VSCode, Affinity, Kanri, iTerm, UFocus, Typeface, Squoosh, Icon Slate
+Services:	Work Sans (Typeface), Pixel (Icons), Netlify, Porkbun
 Testing:	Chrome (Mac/PC), Firefox (Mac/PC), Safari (Mac/iOS)
-Updated:	https://snipclipapp.com/change.log
+Updated:	https://websitesustainability.com/change.log
