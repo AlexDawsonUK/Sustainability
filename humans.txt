@@ -19,4 +19,3 @@ Components:	None
 Software:	VSCode, Affinity, Kanri, iTerm, UFocus, Typeface, Squoosh, Icon Slate
 Services:	Work Sans (Typeface), Pixel (Icons), Netlify, Porkbun
 Testing:	Chrome (Mac/PC), Firefox (Mac/PC), Safari (Mac/iOS)
-Updated:	https://websitesustainability.com/change.log
