@@ -136,6 +136,11 @@
 	h1 {
 		flex-direction: column; }
 }
+@media screen and (max-width: 550px) {
+	footer {
+		flex-direction: column-reverse;
+		text-align: center; }
+}
 @media screen and (max-width: 500px) {
 	fieldset {
 		border: none; }
@@ -149,9 +154,6 @@
 		padding: unset; }
 	fieldset label {
 		padding: 0.5em 0; }
-	footer {
-		flex-direction: column-reverse;
-		text-align: center; }
 }
 @media (prefers-color-scheme: dark) {
 	html, .important, .note, fieldset > label:hover, fieldset > label:hover input, div > label:hover:not(:has(input:disabled)), div > label:hover:not(:has(input:disabled)) input, select:hover {

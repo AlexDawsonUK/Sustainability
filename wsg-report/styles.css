@@ -203,15 +203,15 @@
 @media screen and (max-width: 550px) {
 	section table:first-of-type tbody {
 		grid-template-columns: repeat(1, minmax(0, 1fr)); }
+	footer {
+		flex-direction: column-reverse;
+		text-align: center; }
 }
 @media screen and (max-width: 500px) {
 	label:has(input) {
 		padding: 0.5em 0; }
 	.guidelines {
 		padding: 0.5em; }
-	footer {
-		flex-direction: column-reverse;
-		text-align: center; }
 }
 @media (prefers-color-scheme: dark) {
 	html, details label:has(input):not(.otherText):hover {
