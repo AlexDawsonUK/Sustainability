@@ -5,7 +5,7 @@
 /* TEAM */
 
 Title:		Alexander Dawson
-Position:	Web Developer
+Position:	Sustainability Specialist & Web Developer
 Site:		https://alexanderdawson.com
 Twitter:	@AlexDawsonUK
 Location:	Brighton, UK
@@ -17,5 +17,5 @@ Language:	English (US)
 Standards:	htaccess, TXT, HTML, XML, JSON, CSS, JS
 Components:	None
 Software:	VSCode, Affinity, Kanri, iTerm, UFocus, Typeface, Squoosh, Icon Slate
-Services:	Work Sans (Typeface), Pixel (Icons), Netlify, Porkbun
+Services:	Pixel (Icons), Netlify, Porkbun
 Testing:	Chrome (Mac/PC), Firefox (Mac/PC), Safari (Mac/iOS)

@@ -1,0 +1,186 @@
+@media screen {
+	.hide, section:not(:target), body:has(#results:target) header p:first-of-type, dt span {
+		content-visibility: hidden; height: 1px; left: -1000px; overflow: hidden; position: absolute; top: -1px; width: 1px; }
+	.show, :root:not(:has(:target)) #questions, section:target {
+		content-visibility: auto; height: auto; left: auto; overflow: unset; position: static; top: auto; width: 100%; }
+	html {
+		background-color: #cfe8d0; }
+	body {
+		background-color: #ffffff;
+		border-radius: 8px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		max-width: 900px;
+		margin: 4em auto;
+		padding: 4em; }
+	body, select, .button {
+		font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif; }
+	h1 {
+		align-items: center;
+		display: flex;
+		gap: 0.25em;
+		margin: unset; }
+	.logo {
+		height: 1em;
+		flex-shrink: 0;
+		width: 1em; }
+	h1 span {
+		color: #336934; }
+	.important {
+		background-color: #fff8df;
+		border-left: 4px solid #d5a600;
+		margin-bottom: unset;
+		padding: 1em 1.5em; }
+	fieldset {
+		border: 1px solid #d5d9d7;
+		border-radius: 8px; }
+	fieldset:not(:last-child) {
+		margin-bottom: 1.5em; }
+	legend {
+		font-weight: bold;
+		padding: 0 0.5em; }
+	legend span {
+		color: #336934;
+		font-size: 2em;
+		vertical-align: middle; }
+	select, .button {
+		font-size: 1em; }
+	select, label:has(input[type="checkbox"]) {
+		display: block; }
+	select:not(:last-child), label:has(input[type="checkbox"]):not(:last-child) {
+		margin: 0.5em auto; }
+	fieldset > label:hover, fieldset > label:hover input, div > label:hover:not(:has(input:disabled)), div > label:hover:not(:has(input:disabled)) input, select:hover {
+		background-color: #f2f2f2;
+		cursor: pointer; }
+	select {
+		background-color: #ffffff;
+		border: 1px solid #d5d9d7;
+		padding: 0.5em 1em;
+		width: 100%; }
+	label {
+		border-radius: 8px;
+		padding: 0.5em; }
+	input {
+		margin-right: 0.5em; }
+	.note {
+		background-color: #eaf6fa;
+		border-left: 4px solid #4065d5;
+		padding: 1em 1.5em; }
+	a {
+		border-bottom: 2px solid transparent;
+		color: #0000e4;
+		font-weight: bold;
+		text-decoration: none; }
+	a:hover {
+		border-bottom-color: #0000e4; }
+	.button {
+		background-color: #336934;
+		border: 0;
+		color: #ffffff;
+		cursor: pointer;
+		display: inline-block;
+		font-weight: normal;
+		margin-bottom: 1em;
+		margin-right: 1em;
+		padding: 1em;
+		width: fit-content; }
+	section > .button {
+		margin-top: 1.5em; }
+	ul {
+		padding-left: unset; }
+	li:not(:last-child) {
+		margin-bottom: 1.5em; }
+	dl {
+		padding-left: 1.5em; }
+	dl:first-child::before {
+		content: attr(data-type) ":";
+		font-weight: bold;
+		text-transform: capitalize; }
+	dl:first-child dt {
+		display: inline; }
+	dl:first-child dt a:nth-of-type(2)::before {
+		content: "";
+		display: block; }
+	dt a:first-child {
+		width: fit-content; }
+	dd {
+		margin-left: unset;
+		margin-top: 0.5em; }
+	[data-type="law"] {
+		border-left: 4px solid #e60000; }
+	[data-type="standard"] {
+		border-left: 4px solid #0057ff; }
+	[data-type="guideline"] {
+		border-left: 4px solid #ffd600; }
+	footer {
+		display: flex;
+		justify-content: center; }
+	.copyright::before {
+		content: "\00a9";
+		cursor: text;
+		padding-right: 0.2em; }
+	.build, .copyright {
+		margin-bottom: unset;
+		padding-left: 1em;
+		padding-right: 1em; }
+}
+@media screen and (max-width: 1030px) {
+	body {
+		border-radius: 0;
+		margin: unset; }
+}
+@media screen and (max-width: 750px) {
+	body {
+		padding: 2em; }
+}
+@media screen and (max-width: 675px) {
+	h1 {
+		flex-direction: column; }
+}
+@media screen and (max-width: 500px) {
+	fieldset {
+		border: none; }
+	legend span {
+		font-size: 1em; }
+	#data-tech > legend {
+		margin-bottom: 1em; }
+	#data-report {
+		margin-top: 1em; }
+	fieldset, legend, legend > label {
+		padding: unset; }
+	fieldset label {
+		padding: 0.5em 0; }
+	footer {
+		flex-direction: column-reverse;
+		text-align: center; }
+}
+@media (prefers-color-scheme: dark) {
+	html, .important, .note, fieldset > label:hover, fieldset > label:hover input, div > label:hover:not(:has(input:disabled)), div > label:hover:not(:has(input:disabled)) input, select:hover {
+		background-color: #000000; }
+	body, select {
+		background-color: #2f2e33;
+		color: #ffffff; }
+	h1 span {
+		color: #00FF66; }
+	a {
+		color: #f5c344; }
+	a:hover {
+		border-bottom-color: #f5c344; }
+}
+@media print {
+	svg, .button, h2, #questions {
+		display: none; }
+	body {
+		font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif; }
+}
+@media (prefers-reduced-motion: reduce), (update: slow) {
+	*:not(.safe-animation),
+	*:not(.safe-animation)::before,
+	*:not(.safe-animation)::after {
+		animation-delay: -1ms !important;
+		animation-duration: 1ms !important;
+		animation-iteration-count: 1 !important;
+		background-attachment: initial !important;
+		scroll-behavior: auto !important;
+		transition-delay: -1ms !important;
+		transition-duration: 1ms !important; }
+}

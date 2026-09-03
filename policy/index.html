@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Digital Sustainability Policy Guide</title>
+		<meta name="description" content="There are many laws, standards, and guidelines that affect the sustainability of your digital product or service. This tool helps you navigate them.">
+		<meta name="apple-mobile-web-app-title" content="Sustainability Policy">
+		<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjE0IiB4PSIyIiB5PSIyIiBmaWxsPSIjZWNlZmYxIiByeD0iMSIgcnk9IjEiLz48cGF0aCBmaWxsPSIjNDU1YTY0IiBkPSJNMTAuNSAxSDkuNDE0YTEuNSAxLjUgMCAwIDAtMi44MjkgMEg1LjVhLjUuNSAwIDAgMC0uNS41djJhLjUuNSAwIDAgMCAuNS41aDVhLjUuNSAwIDAgMCAuNS0uNXYtMmEuNS41IDAgMCAwLS41LS41Ii8+PGNpcmNsZSBjeD0iOCIgY3k9IjcuNSIgcj0iMi41IiBmaWxsPSIjNGNhZjUwIi8+PHBhdGggZmlsbD0iI2ZmYzEwNyIgZD0iTTggNXYyLjVoMi41QTIuNSAyLjUgMCAwIDAgOCA1Ii8+PHBhdGggZmlsbD0iIzkwYTRhZSIgZD0iTTguNSAxNGgtNGEuNS41IDAgMCAxIDAtMWg0YS41LjUgMCAwIDEgMCAxTTExLjUgMTJoLTdhLjUuNSAwIDAgMSAwLTFoN2EuNS41IDAgMCAxIDAgMSIvPjwvc3ZnPg==">
+		<link rel="stylesheet" href="styles.css">
+		<script async src="script.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1><svg class="logo" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 16 16"><rect width="12" height="14" x="2" y="2" fill="#eceff1" rx="1" ry="1"/><path fill="#455a64" d="M10.5 1H9.414a1.5 1.5 0 0 0-2.829 0H5.5a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5"/><circle cx="8" cy="7.5" r="2.5" fill="#4caf50"/><path fill="#ffc107" d="M8 5v2.5h2.5A2.5 2.5 0 0 0 8 5"/><path fill="#90a4ae" d="M8.5 14h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1M11.5 12h-7a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1"/></svg><span>Digital Sustainability</span> <em>Policy Guide</em></h1>
+			<p>Answer questions about your organisation, digital services, infrastructure and sustainability responsibilities. Your answers can then be used to identify relevant sustainability laws, standards and guidelines.</p>
+			<p><strong>None</strong> of the information you enter is stored outside your web browser.</p>
+			<p class="important"><strong>Important:</strong> This tool is intended to help identify potentially relevant sustainability requirements and guidance. It is not legal advice and should not be treated as a definitive assessment of compliance.</p>
+		</header>
+		<section id="questions">
+			<h2>Questions</h2>
+			<form>
+				<fieldset>
+					<legend><label for="data-type"><span>1.</span> How broad should the results be?</label></legend>
+					<p class="note"><strong>Note:</strong> Select the level of compliance you require. You can also include awaiting, superseded, or historical results.</p>
+					<select id="data-type">
+						<option value="guideline">Laws + Standards + Guidelines</option>
+						<option value="standard">Laws + Standards</option>
+						<option value="law">Laws Only</option>
+					</select>
+					<label id="data-status"><input type="checkbox" name="exclude" value="exclude">Only include "Passed/Standardized" results</label>
+				</fieldset>
+				<fieldset id="data-region">
+					<legend><span>2.</span> Where does your organisation operate?</legend>
+					<p class="note"><strong>Note:</strong> Select all countries or regions where you have significant operations or provide digital services.</p>
+					<fieldset>
+						<legend>United States</legend>
+						<label><input type="checkbox" name="region" value="us-ca">California</label>
+						<label><input type="checkbox" name="region" value="us-ny">New York</label>
+						<label><input type="checkbox" name="region" value="usa">Other US States</label>
+					</fieldset>
+					<fieldset>
+						<legend>European Union</legend>
+						<label><input type="checkbox" name="region" value="fra">France</label>
+						<label><input type="checkbox" name="region" value="deu">Germany</label>
+						<label><input type="checkbox" name="region" value="eue">Other EU Member States</label>
+					</fieldset>
+					<fieldset>
+						<legend>Other Nations</legend>
+						<label><input type="checkbox" name="region" value="aus">Australia</label>
+						<label><input type="checkbox" name="region" value="bra">Brazil</label>
+						<label><input type="checkbox" name="region" value="can">Canada</label>
+						<label><input type="checkbox" name="region" value="chn">China</label>
+						<label><input type="checkbox" name="region" value="ind">India</label>
+						<label><input type="checkbox" name="region" value="nzl">New Zealand</label>
+						<label><input type="checkbox" name="region" value="sgp">Singapore</label>
+						<label><input type="checkbox" name="region" value="gbr">United Kingdom</label>
+					</fieldset>
+				</fieldset>
+				<fieldset>
+					<legend><label for="data-employees"><span>3.</span> How many employees do you have?</label></legend>
+					<select id="data-employees">
+						<option value="1">1+</option>
+						<option value="250">250+</option>
+						<option value="500">500+</option>
+						<option value="1000">1,000+</option>
+						<option value="5000">5,000+</option>
+					</select>
+				</fieldset>
+				<fieldset>
+					<legend><label for="data-revenue"><span>4.</span> What is your organisation's revenue?</label></legend>
+					<select id="data-revenue">
+						<option value="unsure">Unsure</option>
+						<option value="no">Under 1 million</option>
+						<option value="yes">1 million or more</option>
+					</select>
+				</fieldset>
+				<fieldset>
+					<legend><label for="data-listing"><span>5.</span> Is your organization publicly listed?</label></legend>
+					<select id="data-listing">
+						<option value="unsure">Unsure</option>
+						<option value="yes">Yes</option>
+						<option value="no">No</option>
+					</select>
+				</fieldset>
+				<fieldset id="data-service">
+					<legend><span>6.</span> What type of products or services do you provide?</legend>
+					<label><input type="checkbox" name="type" value="physical">Physical</label>
+					<label><input type="checkbox" name="type" value="digital">Digital</label>
+				</fieldset>
+				<fieldset id="data-tech">
+					<legend><span>7.</span> Do you use or provide any of the following technologies?</legend>
+					<label><input type="radio" name="uses" value="no" checked>No</label>
+					<label><input type="radio" name="uses" value="yes">Yes</label>
+					<div>
+						<label><input type="checkbox" name="tech" value="ai">Artificial Intelligence</label>
+						<label><input type="checkbox" name="tech" value="web">Software / Digital Technology</label>
+						<label><input type="checkbox" name="tech" value="it">IT / Cloud / Data Infrastructure</label>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend><label for="data-report"><span>8.</span> Do you have sustainability or climate reporting obligations?</label></legend>
+					<select id="data-report">
+						<option value="unsure">Unsure</option>
+						<option value="yes">Yes</option>
+						<option value="no">No</option>
+					</select>
+				</fieldset>
+				<a class="button" href="#results">View results</a><input class="button" type="reset" value="Start again"><a class="button" href="#results">Complete list</a>
+			</form>
+		</section>
+		<section id="results">
+			<a class="button" href="#questions">Return to questions</a>
+			<h2>Results</h2>
+			<ul>
+				<!-- 2026 -->
+				<li><dl data-type="law" data-status="awaiting" data-region="us-ny" data-employees="" data-revenue="yes" data-listing="" data-service="" data-tech="" data-report="yes">
+					<dt><a href="https://www.nysenate.gov/legislation/bills/2025/S3456">New York Corporate Climate Accountability Act (S3456)</a><span>, </span><a href="https://leginfo.legislature.ca.gov/">The New York Senate</a>, TBD</dt>
+					<dd>Would require companies operating in New York to disclose their greenhouse-gas emissions, including emissions across their value chains, and establish requirements for corporate climate accountability.</dd>
+				</dl></li>
+				<li><dl data-type="guideline" data-status="" data-region="fra" data-employees="" data-revenue="" data-listing="" data-service="digital" data-tech="web" data-report="">
+					<dt><a href="https://rweb.greenit.fr/">Best practice guidelines for Web eco-design</a><span>, </span><a href="https://greenit.eco/">Association Green IT</a>, 2026</dt>
+					<dd>Provides practical recommendations for reducing the environmental footprint of websites and web services, covering areas such as limiting unnecessary data, requests, processing and infrastructure usage.</dd>
+				</dl></li>
+				<li><dl data-type="law" data-status="awaiting" data-region="usa" data-employees="" data-revenue="" data-listing="" data-service="digital" data-tech="IT" data-report="yes">
+					<dt><a href="https://www.epw.senate.gov/public/index.cfm/2026/4/senators-sullivan-and-welch-introduce-the-clean-cloud-act-to-reduce-energy-consumption-and-environmental-impact-of-data-centers">Clean Cloud Act</a><span>, </span><a href="https://www.epw.senate.gov/">U.S. Senate Committee on Environment and Public Works</a>, 2026</dt>
+					<dd>Proposes requirements for data centres and computing equipment intended to reduce electricity consumption and environmental impacts, including energy-use and emissions requirements.</dd>
+				</dl></li>
+				<li><dl data-type="law" data-status="awaiting" data-region="eue" data-employees="" data-revenue="" data-listing="" data-service="digital" data-tech="AI, IT" data-report="">
+					<dt><a href="https://ec.europa.eu/">EU Cloud and AI Development Act</a><span>, </span><a href="https://commission.europa.eu/">European Parliament</a>, 2026</dt>
+					<dd>Proposes measures to expand sustainable cloud and AI infrastructure in Europe, including more energy-efficient data centres, greater computing capacity and an EU framework for cloud and AI sovereignty.</dd>
+				</dl></li>
+				<li><dl data-type="standard" data-status="" data-region="" data-employees="" data-revenue="" data-listing="" data-service="" data-tech="" data-report="no">
+					<dt><a href="https://www.iso.org/standards/popular/iso-14000-family">ISO 14000 Family - Environmental management</a><span>, </span><a href="https://www.iso.org/">International Organization for Standardization (ISO)</a>, 2026</dt>
+					<dd>Provides a family of standards for environmental management, helping organisations systematically manage environmental impacts, improve environmental performance and demonstrate conformity with recognised environmental-management practices.</dd>
+				</dl></li>
+				<li><dl data-type="standard" data-status="awaiting" data-region="" data-employees="" data-revenue="" data-listing="" data-service="digital" data-tech="IT" data-report="no">
+					<dt><a href="https://www.ietf.org/">Power and Energy Efficiency</a><span>, </span><a href="https://www.ietf.org/">Internet Engineering Task Force (IETF)</a>, 2026</dt>
+					<dd>Developing IETF work focused on improving energy efficiency in networked systems and considering how power and energy consumption can be measured, managed and reduced across Internet infrastructure.</dd>
+				</dl></li>
+				<li><dl data-type="law" data-status="awaiting" data-region="sgp" data-employees="" data-revenue="" data-listing="yes" data-service="" data-tech="" data-report="yes">
+					<dt><a href="https://www.sgx.com/sustainable-finance/sustainability-reporting">Sustainability Disclosure and Reporting Rules</a><span>, </span><a href="https://www.sgxgroup.com/">Singapore Exchange (SGX Group)</a>, 2026</dt>
+					<dd>Requires listed companies to provide sustainability-related disclosures, including climate reporting, using internationally aligned reporting standards and a phased implementation approach.</dd>
+				</dl></li>
+				<li><dl data-type="standard" data-status="" data-region="gbr" data-employees="" data-revenue="" data-listing="unsure" data-service="" data-tech="" data-report="yes">
+					<dt><a href="https://www.gov.uk/government/publications/uk-sustainability-reporting-standards-uk-srs-s1-and-uk-srs-s2">UK Sustainability Reporting Standards (UK SRS S1 and S2)</a><span>, </span><a href="https://www.gov.uk/">UK Government</a>, 2026</dt>
+					<dd>Establishes the UK's sustainability disclosure framework based on the ISSB standards, requiring in-scope organisations to provide decision-useful information about sustainability-related and climate-related risks and opportunities.</dd>
+				</dl></li>
+				<li><dl data-type="standard" data-status="awaiting" data-region="" data-employees="" data-revenue="" data-listing="" data-service="digital" data-tech="IT" data-report="no">
+					<dt><a href="https://www.ietf.org/">Use Cases for Energy Efficiency Management</a><span>, </span><a href="https://www.ietf.org/">Internet Engineering Task Force (IETF)</a>, 2026</dt>
+					<dd>Describes use cases for energy-efficiency management in Internet and network infrastructure, helping identify where energy consumption can be monitored, controlled and optimised.</dd>
+				</dl></li>
+				<!-- 2025 -->
+				<li><dl data-type="standard" data-status="" data-region="" data-employees="" data-revenue="" data-listing="" data-service="digital" data-tech="IT" data-report="no">
+					<dt><a href="https://account.scte.org/standards/library/catalog/scte-295-cable-broadband-corporate-sustainability-metrics/">Cable Broadband Corporate Sustainability Metrics (SCTE 295 2025)</a><span>, </span><a href="https://www.scte.org/">Society of Cable Telecommunications Engineers (SCTE)</a>, 2025</dt>
+					<dd>Defines common sustainability metrics for the cable broadband industry, providing a consistent framework for measuring and reporting environmental performance across broadband network operations.</dd>
+				</dl></li>
+				<li><dl data-type="standard" data-status="" data-region="" data-employees="" data-revenue="" data-listing="" data-service="physical" data-tech="IT" data-report="no">
+					<dt><a href="https://www.opencompute.org/">Embodied Carbon Disclosure Base Specification (OCP/iCA)</a><span>, </span><a href="https://www.opencompute.org/">Open Compute Project (OCP)</a>, 2025</dt>
+					<dd>Provides a common methodology for calculating and communicating the embodied carbon associated with data-centre infrastructure and equipment, helping organisations compare and reduce supply-chain emissions.</dd>
+				</dl></li>
+				<li><dl data-type="standard" data-status="" data-region="" data-employees="" data-revenue="" data-listing="" data-service="digital" data-tech="web" data-report="no">
+					<dt><a href="https://www.iso.org/">ISO/IEC CD TS 20125 - Digital Services Ecodesign</a><span>, </span><a href="https://www.iso.org/">International Organization for Standardization (ISO)</a>, 2025</dt>
+					<dd>Provides a developing framework for addressing the environmental impacts of digital services through ecodesign principles, with the aim of improving resource efficiency and reducing lifecycle environmental impacts.</dd>
+				</dl></li>
+				<li><dl data-type="guideline" data-status="" data-region="fra" data-employees="" data-revenue="" data-listing="" data-service="digital" data-tech="IT" data-report="no">
+					<dt><a href="https://librairie.ademe.fr/">Référentiel par Catégorie de produit (RCP) de services cloud et de centre de données</a><span>, </span><a href="https://www.legifrance.gouv.fr/">French Republic</a>, 2025</dt>
+					<dd>Provides a methodology for assessing the environmental impacts of cloud and data-centre services by product category, supporting more consistent environmental assessment and reporting of digital services.</dd>
+				</dl></li>
+				<li><dl data-type="standard" data-status="" data-region="" data-employees="" data-revenue="" data-listing="" data-service="digital" data-tech="web" data-report="no">
+					<dt><a href="https://sustainablegamesalliance.org/">SGA Standard</a><span>, </span><a href="https://sustainablegamesalliance.org/">Sustainable Games Alliance (SGA)</a>, 2025</dt>
+					<dd>Provides guidance and metrics for measuring and reducing the environmental impact of video games and game development, covering areas such as energy use, emissions and sustainable development practices.</dd>
+				</dl></li>
+				<!-- 2024 -->
+				<li><dl data-type="standard" data-status="" data-region="aus" data-employees="" data-revenue="" data-listing="yes" data-service="" data-tech="" data-report="yes">
+					<dt><a href="https://aasb.gov.au/">AASB Standards (AASB S1 and S2)</a><span>, </span><a href="https://aasb.gov.au/">Australian Accounting Standards Board (AASB)</a>, 2024</dt>
+					<dd>Establishes Australian sustainability and climate-related financial disclosure requirements, broadly aligned with the ISSB standards and requiring entities in scope to report material sustainability and climate-related risks and opportunities.</dd>
+				</dl></li>
+				<li><dl data-type="standard" data-status="" data-region="" data-employees="" data-revenue="" data-listing="" data-service="digital" data-tech="web" data-report="">
+					<dt><a href="https://www.omg.org/spec/ASCRSM/1.0/">Automated Source Code Resource Sustainability Measure (ASCRSM)</a><span>, </span><a href="https://www.omg.org/">Object Management Group (OMG)</a>, 2024</dt>
+					<dd>Defines a standardised way to measure and report the resource consumption and sustainability characteristics of software source code, helping organisations assess and compare the environmental impact of software.</dd>
+				</dl></li>
+				<li><dl data-type="standard" data-status="" data-region="can" data-employees="" data-revenue="" data-listing="unsure" data-service="" data-tech="" data-report="yes">
+					<dt><a href="https://cpastore-boutiquecpa.cpacanada.ca/">Canadian Sustainability Disclosure Standards (CSDS S1 and S2)</a><span>, </span><a href="https://www.frascanada.ca/en/cssb">Canadian Sustainability Standards Board (CSSB)</a>, 2024</dt>
+					<dd>Provides Canada's sustainability disclosure framework, covering general sustainability-related financial information and climate-related disclosures and closely incorporating the ISSB's global baseline.</dd>
+				</dl></li>
+				<li><dl data-type="standard" data-status="" data-region="chn" data-employees="" data-revenue="" data-listing="yes" data-service="" data-tech="" data-report="yes">
+					<dt><a href="https://www.china-briefing.com/">China Sustainability Disclosure Standards for Businesses</a><span>, </span><a href="https://www.mof.gov.cn/">Ministry of Finance of the People's Republic of China</a>, 2024</dt>
+					<dd>Establishes China's framework for corporate sustainability disclosures, covering environmental, social and governance information and moving Chinese reporting towards greater consistency with international sustainability disclosure practices.</dd>
+				</dl></li>
+				<li><dl data-type="law" data-status="historical" data-region="usa" data-employees="" data-revenue="" data-listing="unsure" data-service="" data-tech="" data-report="yes">
+					<dt><a href="https://www.sec.gov/files/rules/final/2024/33-11275.pdf">Climate-Related Disclosure Rules</a><span>, </span><a href="https://www.sec.gov/">Securities and Exchange Commission</a>, 2024</dt>
+					<dd>Requires public companies and certain issuers to provide standardised information about material climate-related risks, impacts and financial effects, with reporting requirements phased in according to company type.</dd>
+				</dl></li>
+				<li><dl data-type="law" data-status="" data-region="eue" data-employees="5000" data-revenue="yes" data-listing="" data-service="" data-tech="" data-report="no">
+					<dt><a href="https://commission.europa.eu/topics/corporate-sustainability-due-diligence_en">Corporate Sustainability Due Diligence Directive (CS3D)</a><span>, </span><a href="https://commission.europa.eu/">European Parliament</a>, 2024</dt>
+					<dd>Requires large companies in scope to identify, prevent and address adverse human-rights and environmental impacts in their own operations and value chains, including climate-transition planning.</dd>
+				</dl></li>
+				<li><dl data-type="law" data-status="awaiting" data-region="eue" data-employees="" data-revenue="" data-listing="" data-service="digital" data-tech="web" data-report="">
+					<dt><a href="https://www.digital-fairness-act.com/">Digital Fairness Act (DFA)</a><span>, </span><a href="https://commission.europa.eu/">European Parliament</a>, 2024</dt>
+					<dd>Would strengthen consumer protection online by addressing practices such as dark patterns, addictive design, misleading influencer marketing and unfair personalisation, particularly where consumers are vulnerable.</dd>
+				</dl></li>
+				<li><dl data-type="law" data-status="" data-region="eue" data-employees="" data-revenue="" data-listing="" data-service="digital" data-tech="IT" data-report="">
+					<dt><a href="https://www.springlex.eu/">Digital Operational Resilience Act (DORA)</a><span>, </span><a href="https://commission.europa.eu/">European Parliament</a>, 2024</dt>
+					<dd>Sets EU-wide requirements for financial entities to manage ICT risks, withstand and recover from technology disruptions, report major incidents and oversee ICT third-party providers.</dd>
+				</dl></li>
+				<li><dl data-type="law" data-status="" data-region="eue" data-employees="" data-revenue="" data-listing="" data-service="physical" data-tech="web" data-report="no">
+					<dt><a href="https://environment.ec.europa.eu/topics/circular-economy/ecodesign-sustainable-products-regulation_en">Ecodesign for Sustainable Products Regulation (ESPR)</a><span>, </span><a href="https://commission.europa.eu/">European Parliament</a>, 2024</dt>
+					<dd>Creates a framework for making products sold in the EU more durable, repairable, recyclable and resource-efficient, with requirements covering areas such as energy use, recycled content, environmental footprints and Digital Product Passports.</dd>
+				</dl></li>
+				<li><dl data-type="guideline" data-status="" data-region="" data-employees="" data-revenue="" data-listing="" data-service="digital" data-tech="web" data-report="">
+					<dt><a href="https://www.w3.org/TR/ethical-web-principles/">Ethical Web Principles</a><span>, </span><a href="https://www.w3.org/2001/tag/">W3C Technical Architecture Group</a>, 2024</dt>
+					<dd>Sets out principles for designing and evolving the web in ways that respect people and society, addressing issues including accessibility, privacy, security, sustainability, interoperability and user control.</dd>
+				</dl></li>
+				<li><dl data-type="law" data-status="" data-region="eue" data-employees="" data-revenue="" data-listing="" data-service="digital" data-tech="AI" data-report="">
+					<dt><a href="https://artificialintelligenceact.eu/">EU Artificial Intelligence Act (AI Act)</a><span>, </span><a href="https://commission.europa.eu/">European Parliament</a>, 2024</dt>
+					<dd>Creates a risk-based framework for AI in the EU, banning certain unacceptable uses and imposing progressively stronger requirements on high-risk systems, general-purpose AI and AI transparency.</dd>
+				</dl></li>
+				<li><dl data-type="guideline" data-status="" data-region="fra" data-employees="" data-revenue="" data-listing="" data-service="digital" data-tech="AI" data-report="">
+					<dt><a href="https://telechargement.afnor.info/">General Frugal AI Guidelines</a><span>, </span><a href="https://www.boutique.afnor.org/">Association Française de Normalisation (AFNOR)</a>, 2024</dt>
+					<dd>Provides guidance for developing and operating AI systems more frugally, with recommendations for reducing resource and energy consumption while maintaining appropriate performance and functionality.</dd>
+				</dl></li>
+				<li><dl data-type="guideline" data-status="" data-region="fra" data-employees="" data-revenue="" data-listing="" data-service="digital" data-tech="web" data-report="">
+					<dt><a href="https://www.arcep.fr/">General Policy Framework for the Ecodesign of Digital Services (GPF)</a><span>, </span><a href="https://www.legifrance.gouv.fr/">French Republic</a>, 2024</dt>
+					<dd>Provides a framework for applying ecodesign principles to digital services, encouraging organisations to reduce resource consumption and environmental impacts throughout the lifecycle of digital products and services.</dd>
+				</dl></li>
+				<li><dl data-type="law" data-status="" data-region="us-ca" data-employees="" data-revenue="" data-listing="" data-service="digital" data-tech="AI" data-report="no">
+					<dt><a href="https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240AB2013">Generative AI: Training Data Transparency (AB-2013)</a><span>, </span><a href="https://leginfo.legislature.ca.gov/">State of California</a>, 2024</dt>
+					<dd>Requires developers of generative AI systems to publish documentation about the datasets used to train their systems, improving transparency around training data.</dd>
+				</dl></li>
+				<li><dl data-type="law" data-status="awaiting" data-region="eue" data-employees="" data-revenue="" data-listing="" data-service="both" data-tech="" data-report="no">
+					<dt><a href="https://www.europarl.europa.eu/doceo/document/TA-9-2024-0131_EN.html">Green Claims Directive</a><span>, </span><a href="https://commission.europa.eu/">European Parliament</a>, 2024</dt>
+					<dd>Proposes rules requiring businesses to substantiate environmental claims about products and services, helping prevent misleading green claims and ensuring consumers receive reliable sustainability information.</dd>
+				</dl></li>
+				<li><dl data-type="guideline" data-status="" data-region="" data-employees="" data-revenue="" data-listing="" data-service="digital" data-tech="web" data-report="">
+					<dt><a href="https://www.itu.int/">Green Digital Declaration</a><span>, </span><a href="https://www.itu.int/">COP29</a>, 2024</dt>
+					<dd>Sets out commitments to use digital technologies to support climate action while reducing the environmental footprint of the digital sector, including through greater energy efficiency and sustainable digital infrastructure.</dd>
+				</dl></li>
+				<li><dl data-type="law" data-status="" data-region="eue" data-employees="" data-revenue="" data-listing="" data-service="both" data-tech="" data-report="no">
+					<dt><a href="https://eur-lex.europa.eu/eli/dir/2024/825/oj">Green Transition Directive (EU 2024/825)</a><span>, </span><a href="https://commission.europa.eu/">European Parliament</a>, 2024</dt>
+					<dd>Strengthens consumer protection against greenwashing by requiring clearer information about product durability and repairability and restricting misleading environmental claims and sustainability labels.</dd>
+				</dl></li>
+				<li><dl data-type="standard" data-status="awaiting" data-region="" data-employees="" data-revenue="" data-listing="" data-service="digital" data-tech="IT" data-report="no">
+					<dt><a href="https://www.ietf.org/">Requirements for Energy Efficiency Management</a><span>, </span><a href="https://www.ietf.org/">Internet Engineering Task Force (IETF)</a>, 2024</dt>
+					<dd>Defines requirements and use cases for managing energy efficiency in networked systems, providing a basis for developing mechanisms that can monitor and optimise energy consumption.</dd>
+				</dl></li>
+				<li><dl data-type="standard" data-status="" data-region="" data-employees="" data-revenue="" data-listing="" data-service="digital" data-tech="web" data-report="yes">
+					<dt><a href="https://sci.greensoftware.foundation/">Software Carbon Intensity (SCI)</a><span>, </span><a href="https://greensoftware.foundation/">Green Software Foundation (GSF)</a>, 2024</dt>
+					<dd>Defines a standardised measurement for the carbon emissions associated with running software, combining operational emissions with embodied emissions and expressing the result in relation to a functional unit of software use.</dd>
+				</dl></li>
+				<li><dl data-type="law" data-status="" data-region="gbr" data-employees="" data-revenue="" data-listing="" data-service="" data-tech="" data-report="yes">
+					<dt><a href="https://www.gov.uk/government/consultations/sustainability-disclosure-requirements-sdr-and-investment-labels">Sustainable Disclosure Requirements (SDR)</a><span>, </span><a href="https://www.fca.org.uk/">Financial Conduct Authority (FCA)</a>, 2024</dt>
+					<dd>Sets rules for how UK investment products can use sustainability-related terms, requiring clearer disclosures and introducing voluntary sustainability labels to help investors identify genuinely sustainable products and reduce greenwashing.</dd>
+				</dl></li>
+				<li><dl data-type="standard" data-status="" data-region="" data-employees="" data-revenue="" data-listing="" data-service="digital" data-tech="IT" data-report="">
+					<dt><a href="https://www.sustainableit.org/">Sustainable IT</a><span>, </span><a href="https://www.sustainableit.org/">SustainableIT.org</a>, 2024</dt>
+					<dd>Provides a framework for organisations to address the environmental and social impacts of information technology across its lifecycle, supporting more sustainable IT strategies, practices and decision-making.</dd>
+				</dl></li>
+				<!-- 2023 -->
+				<li><dl data-type="law" data-status="" data-region="us-ca" data-employees="" data-revenue="yes" data-listing="" data-service="" data-tech="" data-report="yes">
+					<dt><a href="https://legiscan.com/CA/text/SB261/id/2863153">Climate-Related Financial Risk Act (SB 261/CFRA)</a><span>, </span><a href="https://leginfo.legislature.ca.gov/">California State Legislature</a>, 2023</dt>
+					<dd>Requires large companies doing business in California to prepare and publicly disclose reports describing their climate-related financial risks and measures taken to address them.</dd>
+				</dl></li>
+				<li><dl data-type="law" data-status="" data-region="us-ca" data-employees="" data-revenue="yes" data-listing="" data-service="" data-tech="" data-report="yes">
+					<dt><a href="https://legiscan.com/CA/text/SB253/id/2863152">Corporate Climate Data Accountability Act (SB 253/CCDAA)</a><span>, </span><a href="https://leginfo.legislature.ca.gov/">California State Legislature</a>, 2023</dt>
+					<dd>Requires large companies doing business in California to disclose their Scope 1, 2 and 3 greenhouse-gas emissions, creating standardised corporate emissions reporting requirements.</dd>
+				</dl></li>
+				<li><dl data-type="law" data-status="" data-region="eue" data-employees="1000" data-revenue="yes" data-listing="unsure" data-service="" data-tech="" data-report="yes">
+					<dt><a href="https://finance.ec.europa.eu/capital-markets-union-and-financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en">Corporate Sustainability Reporting Directive (CSRD)</a><span>, </span><a href="https://commission.europa.eu/">European Parliament</a>, 2023</dt>
+					<dd>Expands and standardises sustainability reporting by companies in scope, requiring disclosures covering environmental, social and governance matters and bringing reporting into a common European framework.</dd>
+				</dl></li>
+				<li><dl data-type="law" data-status="" data-region="deu" data-employees="" data-revenue="" data-listing="" data-service="" data-tech="IT" data-report="yes">
+					<dt><a href="https://www.gesetze-im-internet.de/enefg/">Energy Efficiency Act (EnEfG)</a><span>, </span><a href="https://www.bundesregierung.de/">Federal Government (Bundesregierung)</a>, 2023</dt>
+					<dd>Sets Germany-wide energy-efficiency requirements, including obligations for large companies and data centres to monitor and report energy use and improve energy efficiency and waste-heat utilisation.</dd>
+				</dl></li>
+				<li><dl data-type="law" data-status="" data-region="eue" data-employees="" data-revenue="" data-listing="" data-service="" data-tech="IT" data-report="no">
+					<dt><a href="https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficiency-targets-directive-and-rules_en">Energy Efficiency Directive</a><span>, </span><a href="https://commission.europa.eu/">European Parliament</a>, 2023</dt>
+					<dd>Raises the EU's energy-efficiency ambition and requires Member States to reduce energy consumption through measures covering buildings, industry, public bodies and energy use more broadly.</dd>
+				</dl></li>
+				<li><dl data-type="law" data-status="awaiting" data-region="bra" data-employees="" data-revenue="" data-listing="yes" data-service="" data-tech="" data-report="yes">
+					<dt><a href="https://www.gov.br/cvm/pt-br/assuntos/noticias/cvm-edita-resolucao-193-que-trata-da-elaboracao-e-divulgacao-do-relatorio-de-informacoes-financeiras-relacionadas-a-sustentabilidade">Enhancement and Standardization of Climate-Related Disclosures (Resolution 193)</a><span>, </span><a href="https://www.gov.br/cvm/">Comissão de Valores Mobiliários (CVM)</a>, 2023</dt>
+					<dd>Introduces sustainability-related financial reporting requirements in Brazil based on the ISSB standards, initially on a voluntary basis and subsequently becoming mandatory for companies in scope.</dd>
+				</dl></li>
+				<li><dl data-type="guideline" data-status="" data-region="eue" data-employees="" data-revenue="" data-listing="" data-service="digital" data-tech="web" data-report="">
+					<dt><a href="https://digital-strategy.ec.europa.eu/en/policies/european-declaration-digital-rights">European Digital Rights and Principles</a><span>, </span><a href="https://commission.europa.eu/">European Parliament</a>, 2023</dt>
+					<dd>Sets out a European vision for a human-centred digital transformation, covering rights and principles including digital inclusion, freedom of choice, safety, privacy, sustainability and participation in the digital environment.</dd>
+				</dl></li>
+				<li><dl data-type="standard" data-status="" data-region="eue" data-employees="1000" data-revenue="yes" data-listing="no" data-service="" data-tech="" data-report="yes">
+					<dt><a href="https://finance.ec.europa.eu/">European Sustainability Reporting Standards (ESRS)</a><span>, </span><a href="https://commission.europa.eu/">European Commission</a>, 2023</dt>
+					<dd>Defines the detailed sustainability reporting requirements for companies subject to the CSRD, covering environmental, social and governance topics and requiring disclosures about impacts, risks, opportunities, policies, targets and performance.</dd>
+				</dl></li>
+				<li><dl data-type="standard" data-status="" data-region="" data-employees="" data-revenue="" data-listing="unsure" data-service="" data-tech="" data-report="yes">
+					<dt><a href="https://www.ifrs.org/issued-standards/ifrs-sustainability-standards-navigator/ifrs-s1-general-requirements/">IFRS Sustainability Disclosure Standards (IFRS S1 and S2)</a><span>, </span><a href="https://www.ifrs.org/">International Sustainability Standards Board (ISSB)</a>, 2023</dt>
+					<dd>Establishes the global baseline for investor-focused sustainability disclosures, with IFRS S1 covering general sustainability-related financial information and IFRS S2 providing detailed requirements for climate-related disclosures.</dd>
+				</dl></li>
+				<li><dl data-type="guideline" data-status="awaiting" data-region="" data-employees="" data-revenue="" data-listing="" data-service="digital" data-tech="web" data-report="">
+					<dt><a href="https://www.w3.org/TR/web-sustainability-guidelines/">Web Sustainability Guidelines (WSG)</a><span>, </span><a href="https://www.w3.org/groups/ig/sustainableweb/">W3C Sustainable Web Interest Group</a>, 2023</dt>
+					<dd>Provides guidance for creating more sustainable websites and web applications, covering areas including user experience, web development, hosting and infrastructure, and business and product strategy, with the aim of reducing environmental impact across the web lifecycle.</dd>
+				</dl></li>
+				<!-- 2022 -->
+				<li><dl data-type="guideline" data-status="" data-region="fra" data-employees="" data-revenue="" data-listing="" data-service="digital" data-tech="web" data-report="">
+					<dt><a href="https://www.boutique.afnor.org/">AFNOR Spec 2201</a><span>, </span><a href="https://isit-europe.org/">Institute for Sustainable IT (Information Technology)</a>, 2022</dt>
+					<dd>Provides a framework and recommendations for organisations seeking to integrate digital sobriety into their activities, helping reduce the environmental impacts associated with digital equipment, services and usage.</dd>
+				</dl></li>
+				<li><dl data-type="standard" data-status="" data-region="nzl" data-employees="" data-revenue="" data-listing="yes" data-service="" data-tech="" data-report="yes">
+					<dt><a href="https://www.xrb.govt.nz/">Aotearoa New Zealand Climate Standards (NZ CS 1-3)</a><span>, </span><a href="https://www.xrb.govt.nz/">External Reporting Board (XRB)</a>, 2022</dt>
+					<dd>Sets New Zealand's framework for climate-related disclosures, requiring entities in scope to report on governance, strategy, risk management, metrics and targets, including their greenhouse gas emissions and climate-related risks and opportunities.</dd>
+				</dl></li>
+				<li><dl data-type="law" data-status="" data-region="gbr" data-employees="500" data-revenue="yes" data-listing="unsure" data-service="" data-tech="" data-report="yes">
+					<dt><a href="https://www.legislation.gov.uk/ukpga/2022/25/contents">Climate-Related Financial Disclosure (CRFD)</a><span>, </span><a href="https://www.gov.uk/">UK Parliament</a>, 2022</dt>
+					<dd>Requires companies and large organisations in scope to disclose information about climate-related risks and opportunities, including their governance, strategy, risk management and relevant metrics and targets.</dd>
+				</dl></li>
+				<li><dl data-type="law" data-status="" data-region="eue" data-employees="" data-revenue="" data-listing="" data-service="both" data-tech="web" data-report="">
+					<dt><a href="https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act">Cyber Resilience Act (CRA)</a><span>, </span><a href="https://commission.europa.eu/">European Parliament</a>, 2022</dt>
+					<dd>Sets cybersecurity requirements for hardware and software products sold in the EU, requiring manufacturers to address vulnerabilities throughout a product's lifecycle and report actively exploited vulnerabilities and serious incidents.</dd>
+				</dl></li>
+				<li><dl data-type="law" data-status="historical" data-region="eue" data-employees="" data-revenue="" data-listing="" data-service="physical" data-tech="" data-report="no">
+					<dt><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32009L0125">Ecodesign for Sustainable Products Directive (ESPD)</a><span>, </span><a href="https://commission.europa.eu/">European Parliament</a>, 2022</dt>
+					<dd>Establishes EU ecodesign requirements for energy-related products, improving their energy efficiency and reducing environmental impacts across their lifecycle through product-specific implementing measures.</dd>
+				</dl></li>
+				<li><dl data-type="standard" data-status="" data-region="" data-employees="" data-revenue="" data-listing="" data-service="both" data-tech="IT" data-report="">
+					<dt><a href="https://www.iso.org/standard/27001">ISO 27001 - Information security management</a><span>, </span><a href="https://www.iso.org/">International Organization for Standardization (ISO)</a>, 2022</dt>
+					<dd>Defines requirements for establishing, implementing, maintaining and continually improving an information security management system, helping organisations manage information-security risks systematically.</dd>
+				</dl></li>
+				<!-- 2021 -->
+				<li><dl data-type="standard" data-status="" data-region="ind" data-employees="" data-revenue="" data-listing="yes" data-service="" data-tech="" data-report="yes">
+					<dt><a href="https://community.sap.com/">Business Responsibility and Sustainability Report (BRSR)</a><span>, </span><a href="https://www.sebi.gov.in/">Securities and Exchange Board of India (SEBI)</a>, 2021</dt>
+					<dd>Provides India's reporting framework for listed companies to disclose their environmental, social and governance performance, including resource use, emissions, waste, employee matters and responsible business practices.</dd>
+				</dl></li>
+				<li><dl data-type="guideline" data-status="" data-region="gbr" data-employees="" data-revenue="" data-listing="" data-service="both" data-tech="" data-report="no">
+					<dt><a href="https://greenclaims.campaign.gov.uk/">Green Claims Code</a><span>, </span><a href="https://www.gov.uk/">UK Parliament</a>, 2021</dt>
+					<dd>Provides guidance for businesses on making environmental claims that are clear, accurate and substantiated, helping ensure that green marketing does not mislead consumers or omit important qualifying information.</dd>
+				</dl></li>
+				<li><dl data-type="guideline" data-status="" data-region="eue" data-employees="" data-revenue="" data-listing="" data-service="digital" data-tech="web" data-report="">
+					<dt><a href="https://gr491.isit-europe.org/">Handbook of Sustainable Design of Digital Services (GR491)</a><span>, </span><a href="https://isit-europe.org/">Institute for Sustainable IT</a>, 2021</dt>
+					<dd>Provides practical guidance for designing more sustainable digital services, with recommendations covering the entire service lifecycle and ways to reduce resource consumption and environmental impacts.</dd>
+				</dl></li>
+				<li><dl data-type="guideline" data-status="" data-region="" data-employees="" data-revenue="" data-listing="" data-service="digital" data-tech="AI" data-report="">
+					<dt><a href="https://unesdoc.unesco.org/">Recommendation on the Ethics of Artificial Intelligence</a><span>, </span><a href="https://www.unesco.org/">UNESCO</a>, 2021</dt>
+					<dd>Provides a global ethical framework for AI, addressing issues including human rights, transparency, accountability, environmental and ecosystem impacts, inclusion, safety and responsible governance.</dd>
+				</dl></li>
+				<li><dl data-type="law" data-status="" data-region="deu" data-employees="1000" data-revenue="" data-listing="" data-service="" data-tech="IT" data-report="no">
+					<dt><a href="https://www.csr-in-deutschland.de/EN/Business-Human-Rights/Supply-Chain-Due-Diligence-Act/supply-chain-due-diligence-act.html">Supply Chain and Due Diligence Act (SCDDA)</a><span>, </span><a href="https://www.bmas.de/">Federal Ministry of Labour and Social Affairs</a>, 2021</dt>
+					<dd>Requires companies above specified thresholds to establish due-diligence processes to identify and address human-rights and certain environmental risks in their own operations and supply chains.</dd>
+				</dl></li>
+				<li><dl data-type="law" data-status="" data-region="fra" data-employees="" data-revenue="" data-listing="" data-service="digital" data-tech="web" data-report="no">
+					<dt><a href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000043956924">Visant à réduire l'empreinte environnementale du numérique (REEN)</a><span>, </span><a href="https://www.legifrance.gouv.fr/">French Republic</a>, 2021</dt>
+					<dd>Targets the environmental footprint of digital technology in France through measures promoting longer device lifetimes, more sustainable digital services, greater awareness of digital impacts and reduced resource consumption.</dd>
+				</dl></li>
+				<!-- 2020 -->
+				<li><dl data-type="law" data-status="" data-region="fra" data-employees="" data-revenue="" data-listing="" data-service="physical" data-tech="" data-report="no">
+					<dt><a href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000042193192">Anti-gaspillage pour une économie circulaire' (AGEC)</a><span>, </span><a href="https://www.legifrance.gouv.fr/">French Republic</a>, 2020</dt>
+					<dd>Introduces a broad set of measures to reduce waste and move France towards a circular economy, including rules on repairability, reuse, recycling, producer responsibility, single-use products and the disposal of unsold goods.</dd>
+				</dl></li>
+				<li><dl data-type="law" data-status="" data-region="eue" data-employees="" data-revenue="" data-listing="unsure" data-service="" data-tech="AI, web, IT" data-report="yes">
+					<dt><a href="https://eur-lex.europa.eu/eli/reg/2020/852/oj">EU Taxonomy Regulation</a><span>, </span><a href="https://commission.europa.eu/">European Parliament</a>, 2020</dt>
+					<dd>Creates an EU classification system for determining which economic activities can be considered environmentally sustainable, helping investors and companies make consistent sustainability-related disclosures and reducing greenwashing.</dd>
+				</dl></li>
+				<li><dl data-type="standard" data-status="" data-region="" data-employees="" data-revenue="" data-listing="" data-service="" data-tech="" data-report="">
+					<dt><a href="https://www.iso.org/standard/72496.html">ISO Guide 84:2020 - Guidelines for addressing climate change in standards</a><span>, </span><a href="https://www.iso.org/">International Organization for Standardization (ISO)</a>, 2020</dt>
+					<dd>Provides guidance to standards developers on incorporating climate-change considerations into standards, including adaptation, mitigation and the assessment of climate-related impacts.</dd>
+				</dl></li>
+				<!-- 2019 -->
+				<li><dl data-type="standard" data-status="" data-region="" data-employees="" data-revenue="" data-listing="" data-service="" data-tech="IT" data-report="no">
+					<dt><a href="https://www.iso.org/standard/68286.html">ISO 46001:2019 - Water efficiency management systems</a><span>, </span><a href="https://www.iso.org/">International Organization for Standardization (ISO)</a>, 2019</dt>
+					<dd>Specifies requirements for a water efficiency management system, helping organisations systematically identify water use, improve efficiency, reduce consumption and monitor water-related performance.</dd>
+				</dl></li>
+				<li><dl data-type="law" data-status="" data-region="gbr" data-employees="250" data-revenue="yes" data-listing="yes" data-service="" data-tech="IT" data-report="yes">
+					<dt><a href="https://www.gov.uk/government/publications/streamlined-energy-and-carbon-reporting-secr-for-quoted-companies">Streamlined Energy and Carbon Reporting (SECR)</a><span>, </span><a href="https://www.gov.uk/">UK Parliament</a>, 2019</dt>
+					<dd>Requires qualifying UK companies and limited liability partnerships to report their energy use, greenhouse-gas emissions and energy-efficiency measures in their annual reports, increasing transparency around corporate energy and carbon performance.</dd>
+				</dl></li>
+				<!-- 2018 -->
+				<li><dl data-type="standard" data-status="" data-region="" data-employees="" data-revenue="" data-listing="" data-service="physical" data-tech="" data-report="no">
+					<dt><a href="https://www.iso.org/standard/71206.html">ISO 14067:2018 - Greenhouse gases</a><span>, </span><a href="https://www.iso.org/">International Organization for Standardization (ISO)</a>, 2018</dt>
+					<dd>Specifies principles and requirements for quantifying and reporting the carbon footprint of products, including greenhouse-gas emissions and removals across a product's life cycle.</dd>
+				</dl></li>
+				<li><dl data-type="standard" data-status="" data-region="" data-employees="" data-revenue="" data-listing="" data-service="" data-tech="IT" data-report="no">
+					<dt><a href="https://www.iso.org/standard/69426.html">ISO 50001 - Energy management</a><span>, </span><a href="https://www.iso.org/">International Organization for Standardization (ISO)</a>, 2018</dt>
+					<dd>Sets requirements for an energy management system that enables organisations to establish energy policies, measure energy performance, improve energy efficiency and continually reduce energy use.</dd>
+				</dl></li>
+				<li><dl data-type="standard" data-status="" data-region="" data-employees="" data-revenue="" data-listing="unsure" data-service="" data-tech="IT" data-report="yes">
+					<dt><a href="https://navigator.sasb.ifrs.org/">SASB Standards (SASB)</a><span>, </span><a href="https://www.ifrs.org/issued-standards/sasb-standards/">SASB Standards Board</a>, 2018</dt>
+					<dd>Provides industry-specific sustainability disclosure standards identifying financially material sustainability topics and metrics that are particularly relevant to investors across different industries.</dd>
+				</dl></li>
+				<!-- 2017 -->
+				<li><dl data-type="standard" data-status="historical" data-region="" data-employees="" data-revenue="" data-listing="unsure" data-service="" data-tech="" data-report="yes">
+					<dt><a href="https://www.fsb-tcfd.org/">Task Force on Climate-related Financial Disclosures (TCFD)</a><span>, </span><a href="https://www.fsb.org/">Financial Stability Board (FSB)</a>, 2017</dt>
+					<dd>Established a framework for organisations to disclose climate-related financial risks and opportunities across four areas: governance, strategy, risk management, and metrics and targets. The TCFD's work was incorporated into the ISSB standards in 2023.</dd>
+				</dl></li>
+				<!-- 2016 -->
+				<li><dl data-type="standard" data-status="" data-region="" data-employees="" data-revenue="" data-listing="" data-service="" data-tech="" data-report="yes">
+					<dt><a href="https://www.globalreporting.org/">GRI Standards</a><span>, </span><a href="https://www.globalreporting.org/">Global Reporting Initiative (GRI)</a>, 2016</dt>
+					<dd>Provides a widely used framework for organisations to report their impacts on the economy, environment and people, using topic-specific standards to support consistent and comparable sustainability reporting.</dd>
+				</dl></li>
+				<li><dl data-type="guideline" data-status="" data-region="" data-employees="" data-revenue="" data-listing="" data-service="both" data-tech="" data-report="">
+					<dt><a href="https://sdgs.un.org/goals">Sustainable Development Goals (SDGs)</a><span>, </span><a href="https://www.un.org/">United Nations</a>, 2016</dt>
+					<dd>Defines 17 global goals and associated targets addressing major economic, social and environmental challenges, providing a shared framework for sustainable development through 2030.</dd>
+				</dl></li>
+			</ul>
+		</section>
+		<footer>
+			<p class="copyright">Copyright, <span>2026</span></p>
+			<p class="build">Built by <a href="https://alexanderdawson.com">Alex Dawson</a>.</p>
+		</footer>
+	</body>
+</html>

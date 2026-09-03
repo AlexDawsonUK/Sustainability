@@ -1,0 +1,3971 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>WSG Report and Statement Tool</title>
+		<meta name="description" content="Transparency is critical in sustainability. This tool will generate a sustainability report that showcases your goals, achievements, and progress.">
+		<meta name="apple-mobile-web-app-title" content="WSG Report Tool">
+		<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI0IDI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0yMC41IDI0aC0xN2EuNS41IDAgMCAxLS41LS41di0xN2EuNS41IDAgMCAxIC4xNS0uMzVsNi02QS41LjUgMCAwIDEgOS41IDBoMTFjLjI4IDAgLjUuMjIuNS41djIzYS41LjUgMCAwIDEtLjUuNXpNNCAyM2gxNlYxSDkuN0w0IDYuN1YyM3oiLz48cGF0aCBkPSJNOS41IDdoLTZhLjUuNSAwIDAgMSAwLTFIOVYuNWEuNS41IDAgMCAxIDEgMHY2YS41LjUgMCAwIDEtLjUuNXpNMTcuNSA5aC0xMWEuNS41IDAgMCAxIDAtMWgxMWEuNS41IDAgMCAxIDAgMXpNMTcuNSA2aC01YS41LjUgMCAwIDEgMC0xaDVhLjUuNSAwIDAgMSAwIDF6TTE3LjUgMTJoLTExYS41LjUgMCAwIDEgMC0xaDExYS41LjUgMCAwIDEgMCAxek0xNy41IDE1aC0xMWEuNS41IDAgMCAxIDAtMWgxMWEuNS41IDAgMCAxIDAgMXpNMTcuNSAxOGgtMTFhLjUuNSAwIDAgMSAwLTFoMTFhLjUuNSAwIDAgMSAwIDF6TTE3LjUgMjFoLTExYS41LjUgMCAwIDEgMC0xaDExYS41LjUgMCAwIDEgMCAxeiIvPjwvc3ZnPg==">
+		<link rel="stylesheet" href="styles.css">
+		<script async src="script.js"></script>
+	</head>
+	<body>
+		<h1>
+			<svg class="logo" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 24 24"><path d="M20.5 24h-17a.5.5 0 0 1-.5-.5v-17a.5.5 0 0 1 .15-.35l6-6A.5.5 0 0 1 9.5 0h11c.28 0 .5.22.5.5v23a.5.5 0 0 1-.5.5zM4 23h16V1H9.7L4 6.7V23z"/><path d="M9.5 7h-6a.5.5 0 0 1 0-1H9V.5a.5.5 0 0 1 1 0v6a.5.5 0 0 1-.5.5zM17.5 9h-11a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1zM17.5 6h-5a.5.5 0 0 1 0-1h5a.5.5 0 0 1 0 1zM17.5 12h-11a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1zM17.5 15h-11a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1zM17.5 18h-11a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1zM17.5 21h-11a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1z"/></svg>
+			<span><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/">WSG</a></strong> <span class="type-a">Report</span> <span class="subtitle">and</span> <span class="type-b">Statement</span><span class="subtitle"> Tool</span></span></h1>
+		<section id="generator">
+			<p>The information that you provide below will generate a sustainability report that you can download and further refine.</p>
+			<p><strong>None</strong> of the fields are required, and none of the information you enter is stored outside your web browser.</p>
+			<form>
+				<fieldset>
+					<legend>Choose a document type</legend>
+					<label><input id="report" type="radio" name="report-type" value="report" checked>Sustainability Report (Detailed)</label>
+					<label><input id="stmt" type="radio" name="report-type" value="statement">Sustainability Statement (Simple)</label>
+				</fieldset>
+				<details id="basic">
+					<summary><strong>Basic information</strong><br> In this section you can provide the minimal set of information recommended for your sustainability report. This includes information about your organization, the standards you applied, and your contact information for feedback.</summary>
+					<h2>About your report</h2>
+					<div class="c">
+						<label class="title" for="org">Name of your organization</label>
+						<em>(Example: "Example Inc.")</em>
+						<input type="text" id="org">
+					</div>
+					<div class="c">
+						<label class="title spacer" for="label">Name of your website or application</label>
+						<em>(Example: "Example website" or "Example app version 1.1")</em>
+						<input type="text" id="label">
+					</div>
+					<div class="c">
+						<label class="title spacer" for="url">Address of your product or service</label>
+						<em>(Example: "https://example.com")</em>
+						<input type="url" id="url">
+					</div>
+					<h2>Application of sustainability</h2>
+					<fieldset>
+						<legend>Sustainability best practices</legend>
+						<div>
+							<label for="wsg"><input type="checkbox" id="wsg" checked> W3C Web Sustainability Guidelines (<a href="https://www.w3.org/TR/web-sustainability-guidelines/">WSG</a>)</label>
+						</div>
+						<div>
+							<label for="other"><input type="checkbox" id="other"> <strong>Other</strong> <em>(Show/Hide)</em></label>
+						</div>
+						<div class="c other">
+							<div>
+								<label for="gpf"><input type="checkbox" id="gpf"> General Policy Framework for the Ecodesign of Digital Services (<a href="https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf">ARCEP</a>)</label>
+							</div>
+							<div>
+								<label for="gr491"><input type="checkbox" id="gr491"> Handbook of Sustainable Design of Digital Services (<a href="https://gr491.isit-europe.org/en/">GR491</a>)</label>
+							</div>
+							<div>
+								<label for="sdgs"><input type="checkbox" id="sdgs"> United Nations Sustainable Development Goals (<a href="https://sdgs.un.org/goals">SDGs</a>)</label>
+							</div>
+							<div>
+								<label for="otherText" class="otherText">Other <input type="text" id="otherText"></label>
+							</div>
+						</div>
+					</fieldset>
+					<fieldset class="spacer">
+						<legend>Sustainability standards</legend>
+						<div>
+							<label for="gri"><input type="checkbox" id="gri" checked> Global Reporting Initiative (<a href="https://www.globalreporting.org/how-to-use-the-gri-standards/gri-standards-english-language/">GRI</a>)</label>
+						</div>
+						<div>
+							<label for="sci"><input type="checkbox" id="sci"> Software Carbon Intensity (<a href="https://sci.greensoftware.foundation/">SCI</a>)</label>
+						</div>
+						<div>
+							<label for="iso"><input type="checkbox" id="iso"> ISO Environment and Sustainability Family (<a href="https://www.iso.org/sdg">ISO</a>)</label>
+						</div>
+						<div>
+							<label for="other2"><input type="checkbox" id="other2"> <strong>Other</strong> <em>(Show/Hide)</em></label>
+						</div>
+						<div class="c other">
+							<div>
+								<label for="ascrsm"><input type="checkbox" id="ascrsm"> Automated Source Code Resource Sustainability Measure (<a href="https://www.omg.org/spec/ASCRSM/">ASCRSM</a>)</label>
+							</div>
+							<div>
+								<label for="otherText2" class="otherText">Other <input type="text" id="otherText2"></label>
+							</div>
+						</div>
+					</fieldset>
+					<fieldset class="spacer">
+						<legend>Sustainability legislation</legend>
+						<div>
+							<label for="csrd"><input type="checkbox" id="csrd"> Corporate Sustainability Reporting Directive (<a href="https://finance.ec.europa.eu/capital-markets-union-and-financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en">CSRD</a>)</label>
+						</div>
+						<div>
+							<label for="espr"><input type="checkbox" id="espr"> Ecodesign for Sustainable Products Regulation (<a href="https://commission.europa.eu/energy-climate-change-environment/standards-tools-and-labels/products-labelling-rules-and-requirements/ecodesign-sustainable-products-regulation_en">ESPR</a>)</label>
+						</div>
+						<div>
+							<label for="other3"><input type="checkbox" id="other3"> <strong>Other</strong> <em>(Show/Hide)</em></label>
+						</div>
+						<div class="c other">
+							<div>
+								<label for="gtd"><input type="checkbox" id="gtd"> Green Transition Directive (<a href="https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng">EU/2024/825</a>)</label>
+							</div>
+							<div>
+								<label for="eed"><input type="checkbox" id="eed"> Energy Efficiency Directive (<a href="https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficiency-targets-directive-and-rules/energy-efficiency-directive_en">EU/2023/1791</a>)</label>
+							</div>
+							<div>
+								<label for="reen"><input type="checkbox" id="reen"> Visant à réduire l'empreinte environnementale du numérique (<a href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000044327272">REEN</a>)</label>
+							</div>
+							<div>
+								<label for="otherText3" class="otherText">Other <input type="text" id="otherText3"></label>
+							</div>
+						</div>
+					</fieldset>
+					<h2>Conformance status</h2>
+					<div class="gap">
+						<div>
+							<label for="full"><input type="radio" name="conform" id="full" value="full" checked> <strong>Fully conformant:</strong> the content fully conforms to the above without any exceptions.</label>
+						</div>
+						<div>
+							<label for="part"><input type="radio" name="conform" id="part" value="part"> <strong>Partially conformant:</strong> some parts of the content do not fully conform to the above.</label>
+						</div>
+						<div>
+							<label for="non"><input type="radio" name="conform" id="non" value="non"> <strong>Non conformant:</strong> the content does not conform to the above.</label>
+						</div>
+						<div>
+							<label for="not"><input type="radio" name="conform" id="not" value="not"> <strong>Not assessed:</strong> the content has not been evaluated or the evaluation results are not available.</label>
+						</div>
+						<h2>Additional sustainability considerations</h2>
+						<div class="c">
+							<label for="moreStuff">Further considerations that go beyond the scope of what is mentioned above.</label>
+							<textarea id="moreStuff" name="moreStuff" rows="5"></textarea>
+						</div>
+						<div>
+							<label for="greenwash"><input type="checkbox" id="greenwash" checked> <strong>Greenwashing:</strong> the content <strong>does not</strong> contain any greenwashing or claims that cannot be reinforced with evidence without any exceptions. <em>Evidence for claims should be provided in the above box if required.</em></label>
+						</div>
+					</div>
+					<h2>Feedback options</h2>
+					<div class="c">
+						<label class="title" for="phone">Phone</label>
+						<em>(Example: "+12 34 567 89 00")</em>
+						<input type="tel" id="phone">
+					</div>
+					<div class="c spacer">
+						<label class="title" for="email">E-mail</label>
+						<em>(Example: "sustainability@example.com")</em>
+						<input type="email" id="email">
+					</div>
+					<div class="c spacer">
+						<label class="title" for="address">Address</label>
+						<em>(Example: "PO Box 1, 234 Example Ville")</em>
+						<input type="text" id="address">
+					</div>
+					<div class="c spacer">
+						<label class="title" for="social">Other contact options</label>
+						<em>(Example: "@YourName" on social media)</em>
+						<textarea id="social" name="social" rows="5"></textarea>
+					</div>
+					<div class="c spacer">
+						<label class="title" for="duration">Typical duration for response</label>
+						<em>(Example: "5 business days")</em>
+						<input type="text" id="duration">
+					</div>
+					<h2>Date of publication</h2>
+					<div class="c">
+						<label for="date">Publication date of this sustainability report</label>
+						<input type="date" id="date">
+					</div>
+				</details>
+				<details id="efforts">
+					<summary><strong>Web Sustainability Guidelines</strong><br> In this section you can describe the efforts your organization takes to ensure sustainability. This helps users to understand your sincerity and the validity of the claims you make in your sustainability report.</summary>
+					<details open>
+						<summary>User Experience Design</summary>
+						<div class="guidelines">
+							<details>
+								<summary>2.1 - Identify, assess, disclose, review, and mitigate sustainability impacts</summary>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#impact-analysis">Success Criteria - Impact analysis</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance1">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance1">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe1">Observations:</label>
+										<textarea id="ux-observe1" name="ux-observe1" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#external-impact">Success Criteria - External impact</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance2">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance2">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe2">Observations:</label>
+										<textarea id="ux-observe2" name="ux-observe2" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>2.2 - Understand user requirements or constraints</summary>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#audience-evaluation">Success Criteria - Audience evaluation</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance3">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance3">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe3">Observations:</label>
+										<textarea id="ux-observe3" name="ux-observe3" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>2.3 - Integrate sustainability into every stage of the ideation process</summary>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#sustainable-brand-development">Success Criteria - Sustainable brand development</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance4">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance4">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe4">Observations:</label>
+										<textarea id="ux-observe4" name="ux-observe4" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#wireframes-and-prototypes">Success Criteria - Wireframes and prototypes</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance5">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance5">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe5">Observations:</label>
+										<textarea id="ux-observe5" name="ux-observe5" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#participation-and-testing">Success Criteria - Participation and testing</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance6">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance6">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe6">Observations:</label>
+										<textarea id="ux-observe6" name="ux-observe6" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#environmental-ideation">Success Criteria - Environmental ideation</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance7">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance7">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe7">Observations:</label>
+										<textarea id="ux-observe7" name="ux-observe7" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>2.4 - Design efficient and streamlined user journeys</summary>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#efficient-paths">Success Criteria - Efficient paths</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance8">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance8">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe8">Observations:</label>
+										<textarea id="ux-observe8" name="ux-observe8" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#patterns-for-efficiency">Success Criteria - Patterns for efficiency</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance9">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance9">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe9">Observations:</label>
+										<textarea id="ux-observe9" name="ux-observe9" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#content-discovery">Success Criteria - Content discovery</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance10">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance10">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe10">Observations:</label>
+										<textarea id="ux-observe10" name="ux-observe10" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>2.5 - Design to assist and not to distract</summary>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#respect-user-attention">Success Criteria - Respect user attention</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance11">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance11">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe11">Observations:</label>
+										<textarea id="ux-observe11" name="ux-observe11" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#distraction-free-design">Success Criteria - Distraction-free design</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance12">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance12">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe12">Observations:</label>
+										<textarea id="ux-observe12" name="ux-observe12" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#remove-engagement-traps">Success Criteria - Remove engagement traps</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance13">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance13">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe13">Observations:</label>
+										<textarea id="ux-observe13" name="ux-observe13" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>2.6 - Avoid being manipulative or deceptive</summary>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#deceptive-design-patterns">Success Criteria - Deceptive design patterns</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance14">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance14">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe14">Observations:</label>
+										<textarea id="ux-observe14" name="ux-observe14" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#advertisements">Success Criteria - Advertisements</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance15">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance15">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe15">Observations:</label>
+										<textarea id="ux-observe15" name="ux-observe15" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#analytics-and-tracking">Success Criteria - Analytics and tracking</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance16">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance16">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe16">Observations:</label>
+										<textarea id="ux-observe16" name="ux-observe16" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#search-engine-optimization">Success Criteria - Search Engine Optimization</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance17">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance17">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe17">Observations:</label>
+										<textarea id="ux-observe17" name="ux-observe17" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>2.7 - Make deliverables understandable and reusable</summary>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#deliverables-reusability">Success Criteria - Deliverables reusability</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance18">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance18">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe18">Observations:</label>
+										<textarea id="ux-observe18" name="ux-observe18" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#deliverables-documentation">Success Criteria - Deliverables documentation</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance19">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance19">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe19">Observations:</label>
+										<textarea id="ux-observe19" name="ux-observe19" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#deliverables-readability">Success Criteria - Deliverables readability</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance20">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance20">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe20">Observations:</label>
+										<textarea id="ux-observe20" name="ux-observe20" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>2.8 - Use a design system for interface consistency</summary>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#design-system">Success Criteria - Design system</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance21">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance21">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe21">Observations:</label>
+										<textarea id="ux-observe21" name="ux-observe21" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>2.9 - Optimize media to reduce resource use</summary>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#need-for-media">Success Criteria - Need for media</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance22">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance22">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe22">Observations:</label>
+										<textarea id="ux-observe22" name="ux-observe22" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#optimized-media">Success Criteria - Optimized media</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance23">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance23">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe23">Observations:</label>
+										<textarea id="ux-observe23" name="ux-observe23" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#lazy-loading">Success Criteria - Lazy loading</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance24">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance24">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe24">Observations:</label>
+										<textarea id="ux-observe24" name="ux-observe24" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#user-controlled-media">Success Criteria - User-controlled media</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance25">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance25">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe25">Observations:</label>
+										<textarea id="ux-observe25" name="ux-observe25" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#media-management-and-use">Success Criteria - Media management and use</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance26">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance26">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe26">Observations:</label>
+										<textarea id="ux-observe26" name="ux-observe26" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>2.10 - Ensure animation is proportionate and easy to control</summary>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#need-for-animation">Success Criteria - Need for animation</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance27">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance27">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe27">Observations:</label>
+										<textarea id="ux-observe27" name="ux-observe27" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#avoiding-overburdening">Success Criteria - Avoiding overburdening</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance28">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance28">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe28">Observations:</label>
+										<textarea id="ux-observe28" name="ux-observe28" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#control-animation">Success Criteria - Control animation</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance29">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance29">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe29">Observations:</label>
+										<textarea id="ux-observe29" name="ux-observe29" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#efficient-animation">Success Criteria - Efficient animation</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance30">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance30">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe30">Observations:</label>
+										<textarea id="ux-observe30" name="ux-observe30" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>2.11 - Use optimized web typography</summary>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#pre-installed-typefaces">Success Criteria - Pre-installed typefaces</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance31">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance31">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe31">Observations:</label>
+										<textarea id="ux-observe31" name="ux-observe31" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#web-font-optimization">Success Criteria - Web font optimization</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance32">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance32">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe32">Observations:</label>
+										<textarea id="ux-observe32" name="ux-observe32" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#web-font-subsetting">Success Criteria - Web font subsetting</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance33">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance33">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe33">Observations:</label>
+										<textarea id="ux-observe33" name="ux-observe33" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>2.12 - Avoid unwanted notifications</summary>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#need-for-notification">Success Criteria - Need for notification</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance34">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance34">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe34">Observations:</label>
+										<textarea id="ux-observe34" name="ux-observe34" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#notification-settings">Success Criteria - Notification settings</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance35">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance35">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe35">Observations:</label>
+										<textarea id="ux-observe35" name="ux-observe35" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>2.13 - Reduce the impact of downloadable and physical documents</summary>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#printed-documents">Success Criteria - Printed documents</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance36">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance36">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe36">Observations:</label>
+										<textarea id="ux-observe36" name="ux-observe36" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#optimized-documents">Success Criteria - Optimized documents</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance37">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance37">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe37">Observations:</label>
+										<textarea id="ux-observe37" name="ux-observe37" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#optimized-delivery">Success Criteria - Optimized delivery</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance38">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance38">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe38">Observations:</label>
+										<textarea id="ux-observe38" name="ux-observe38" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#labels-and-choice">Success Criteria - Labels and choice</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance39">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance39">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe39">Observations:</label>
+										<textarea id="ux-observe39" name="ux-observe39" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>2.14 - Involve users early in the project</summary>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#early-user-testing">Success Criteria - Early user testing</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance40">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance40">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe40">Observations:</label>
+										<textarea id="ux-observe40" name="ux-observe40" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>2.15 - Audit and test for bugs or issues requiring resolution</summary>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#ongoing-evaluation">Success Criteria - Ongoing evaluation</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance41">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance41">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe41">Observations:</label>
+										<textarea id="ux-observe41" name="ux-observe41" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#automated-tests">Success Criteria - Automated tests</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance42">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance42">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe42">Observations:</label>
+										<textarea id="ux-observe42" name="ux-observe42" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#performance-testing">Success Criteria - Performance testing</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance43">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance43">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe43">Observations:</label>
+										<textarea id="ux-observe43" name="ux-observe43" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>2.16 - Validate usability through testing and real-world usage</summary>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#usage-changes">Success Criteria - Usage changes</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance44">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance44">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe44">Observations:</label>
+										<textarea id="ux-observe44" name="ux-observe44" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#usability-testing">Success Criteria - Usability testing</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance45">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance45">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe45">Observations:</label>
+										<textarea id="ux-observe45" name="ux-observe45" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>2.17 - Provide cross-platform compatibility support</summary>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#compatibility-documentation">Success Criteria - Compatibility documentation</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance46">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance46">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe46">Observations:</label>
+										<textarea id="ux-observe46" name="ux-observe46" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#maintaining-compatibility">Success Criteria - Maintaining compatibility</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance47">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance47">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe47">Observations:</label>
+										<textarea id="ux-observe47" name="ux-observe47" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#user-constraints">Success Criteria - User constraints</a></legend>
+									<div class="y">
+										<label class="title q" for="ux-conformance48">Conformance status:</label>
+										<select class="ux-conformance" id="ux-conformance48">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="ux-observe48">Observations:</label>
+										<textarea id="ux-observe48" name="ux-observe48" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+						</div>
+					</details>
+					<details open>
+						<summary>Web Development</summary>
+						<div class="guidelines">
+							<details>
+								<summary>3.1 - Set goals based on performance and energy impact</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#performance-goals">Success Criteria - Performance goals</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance1">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance1">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe1">Observations:</label>
+										<textarea id="wd-observe1" name="wd-observe1" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#energy-intensity">Success Criteria - Energy intensity</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance2">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance2">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe2">Observations:</label>
+										<textarea id="wd-observe2" name="wd-observe2" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>3.2 - Minify and remove unused code</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#minified-code">Success Criteria - Minified code</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance3">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance3">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe3">Observations:</label>
+										<textarea id="wd-observe3" name="wd-observe3" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#remove-redundancy">Success Criteria - Remove redundancy</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance4">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance4">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe4">Observations:</label>
+										<textarea id="wd-observe4" name="wd-observe4" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>3.3 - Modularize bandwidth-heavy components</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#code-splitting">Success Criteria - Code splitting</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance5">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance5">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe5">Observations:</label>
+										<textarea id="wd-observe5" name="wd-observe5" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>3.4 - Avoid redundancy and duplication in code</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#remove-or-simplify">Success Criteria - Remove or simplify</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance6">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance6">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe6">Observations:</label>
+										<textarea id="wd-observe6" name="wd-observe6" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#iteration-over-recreation">Success Criteria - Iteration over recreation</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance7">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance7">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe7">Observations:</label>
+										<textarea id="wd-observe7" name="wd-observe7" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#organize-code-arrangement">Success Criteria - Organize code arrangement</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance8">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance8">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe8">Observations:</label>
+										<textarea id="wd-observe8" name="wd-observe8" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>3.5 - Treat third parties the same as first parties</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#assess-and-reduce">Success Criteria - Assess and reduce</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance9">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance9">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe9">Observations:</label>
+										<textarea id="wd-observe9" name="wd-observe9" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#third-party-implementation">Success Criteria - Third-party implementation</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance10">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance10">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe10">Observations:</label>
+										<textarea id="wd-observe10" name="wd-observe10" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#self-hosting">Success Criteria - Self-hosting</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance11">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance11">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe11">Observations:</label>
+										<textarea id="wd-observe11" name="wd-observe11" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#third-party-preferences">Success Criteria - Third-party preferences</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance12">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance12">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe12">Observations:</label>
+										<textarea id="wd-observe12" name="wd-observe12" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>3.6 - Ensure code follows good semantic practices</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#semantic-code">Success Criteria - Semantic code</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance13">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance13">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe13">Observations:</label>
+										<textarea id="wd-observe13" name="wd-observe13" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#optional-features">Success Criteria - Optional features</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance14">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance14">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe14">Observations:</label>
+										<textarea id="wd-observe14" name="wd-observe14" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#non-standard-code">Success Criteria - Non-standard code</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance15">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance15">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe15">Observations:</label>
+										<textarea id="wd-observe15" name="wd-observe15" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#custom-code">Success Criteria - Custom code</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance16">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance16">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe16">Observations:</label>
+										<textarea id="wd-observe16" name="wd-observe16" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>3.7 - Defer the loading of non-critical resources</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#asynchronous-code">Success Criteria - Asynchronous code</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance17">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance17">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe17">Observations:</label>
+										<textarea id="wd-observe17" name="wd-observe17" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#optimized-loading">Success Criteria - Optimized loading</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance18">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance18">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe18">Observations:</label>
+										<textarea id="wd-observe18" name="wd-observe18" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>3.8 - Structure metadata for machine readability</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#required-elements">Success Criteria - Required elements</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance19">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance19">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe19">Observations:</label>
+										<textarea id="wd-observe19" name="wd-observe19" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#meta-tags">Success Criteria - Meta tags</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance20">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance20">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe20">Observations:</label>
+										<textarea id="wd-observe20" name="wd-observe20" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#structured-data">Success Criteria - Structured data</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance21">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance21">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe21">Observations:</label>
+										<textarea id="wd-observe21" name="wd-observe21" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>3.9 - Use media queries that support sustainability goals</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#media-and-preference-queries">Success Criteria - Media and preference queries</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance22">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance22">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe22">Observations:</label>
+										<textarea id="wd-observe22" name="wd-observe22" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>3.10 - Ensure layouts work for different devices and requirements</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#device-adaptable">Success Criteria - Device-adaptable</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance23">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance23">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe23">Observations:</label>
+										<textarea id="wd-observe23" name="wd-observe23" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#progressive-enhancement">Success Criteria - Progressive enhancement</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance24">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance24">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe24">Observations:</label>
+										<textarea id="wd-observe24" name="wd-observe24" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#carbon-aware-design">Success Criteria - Carbon-aware design</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance25">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance25">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe25">Observations:</label>
+										<textarea id="wd-observe25" name="wd-observe25" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#alternative-browsing">Success Criteria - Alternative browsing</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance26">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance26">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe26">Observations:</label>
+										<textarea id="wd-observe26" name="wd-observe26" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>3.11 - Use sustainable JavaScript and APIs</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#sustainable-javascript">Success Criteria - Sustainable JavaScript</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance27">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance27">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe27">Observations:</label>
+										<textarea id="wd-observe27" name="wd-observe27" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#energy-relevant-apis">Success Criteria - Energy-relevant APIs</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance28">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance28">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe28">Observations:</label>
+										<textarea id="wd-observe28" name="wd-observe28" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#api-requests">Success Criteria - API requests</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance29">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance29">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe29">Observations:</label>
+										<textarea id="wd-observe29" name="wd-observe29" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>3.12 - Use dependencies sparingly and maintain them</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#dependency-management">Success Criteria - Dependency management</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance30">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance30">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe30">Observations:</label>
+										<textarea id="wd-observe30" name="wd-observe30" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#dependency-necessity">Success Criteria - Dependency necessity</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance31">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance31">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe31">Observations:</label>
+										<textarea id="wd-observe31" name="wd-observe31" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#dependency-updates">Success Criteria - Dependency updates</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance32">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance32">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe32">Observations:</label>
+										<textarea id="wd-observe32" name="wd-observe32" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>3.13 - Include expected and beneficial files</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#expected-files">Success Criteria - Expected files</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance33">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance33">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe33">Observations:</label>
+										<textarea id="wd-observe33" name="wd-observe33" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#beneficial-files">Success Criteria - Beneficial files</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance34">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance34">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe34">Observations:</label>
+										<textarea id="wd-observe34" name="wd-observe34" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>3.14 - Use the most efficient solution for your service</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#appropriate-implementation">Success Criteria - Appropriate Implementation</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance35">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance35">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe35">Observations:</label>
+										<textarea id="wd-observe35" name="wd-observe35" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#optimized-methodology">Success Criteria - Optimized methodology</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance36">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance36">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe36">Observations:</label>
+										<textarea id="wd-observe36" name="wd-observe36" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#static-over-dynamic">Success Criteria - Static over dynamic</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance37">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance37">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe37">Observations:</label>
+										<textarea id="wd-observe37" name="wd-observe37" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#extensions-and-plugins">Success Criteria - Extensions and plugins</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance38">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance38">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe38">Observations:</label>
+										<textarea id="wd-observe38" name="wd-observe38" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#interface-components">Success Criteria - Interface components</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance39">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance39">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe39">Observations:</label>
+										<textarea id="wd-observe39" name="wd-observe39" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>3.15 - Use the latest stable language version</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#versioning">Success Criteria - Versioning</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance40">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance40">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe40">Observations:</label>
+										<textarea id="wd-observe40" name="wd-observe40" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#language-choice">Success Criteria - Language choice</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance41">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance41">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe41">Observations:</label>
+										<textarea id="wd-observe41" name="wd-observe41" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>3.16 - Reduce the number and complexity of database queries</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#efficient-database-querying">Success Criteria - Efficient database querying</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance42">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance42">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe42">Observations:</label>
+										<textarea id="wd-observe42" name="wd-observe42" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#reuse-of-retrieved-data">Success Criteria - Reuse of retrieved data</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance43">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance43">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe43">Observations:</label>
+										<textarea id="wd-observe43" name="wd-observe43" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#data-minimization-in-queries">Success Criteria - Data minimization in queries</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance44">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance44">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe44">Observations:</label>
+										<textarea id="wd-observe44" name="wd-observe44" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#data-lifecycle-controls">Success Criteria - Data lifecycle controls</a></legend>
+									<div class="y">
+										<label class="title q" for="wd-conformance45">Conformance status:</label>
+										<select class="wd-conformance" id="wd-conformance45">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="wd-observe45">Observations:</label>
+										<textarea id="wd-observe45" name="wd-observe45" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+						</div>
+					</details>
+					<details open>
+						<summary>Hosting, Infrastructure, and Systems</summary>
+						<div class="guidelines">
+							<details>
+								<summary>4.1 - Use sustainable hosting</summary>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#provider-selection">Success Criteria - Provider selection</a></legend>
+									<div class="y">
+										<label class="title q" for="his-conformance1">Conformance status:</label>
+										<select class="his-conformance" id="his-conformance1">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="his-observe1">Observations:</label>
+										<textarea id="his-observe1" name="his-observe1" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#efficient-operation">Success Criteria - Efficient operation</a></legend>
+									<div class="y">
+										<label class="title q" for="his-conformance2">Conformance status:</label>
+										<select class="his-conformance" id="his-conformance2">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="his-observe2">Observations:</label>
+										<textarea id="his-observe2" name="his-observe2" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#equipment-longevity">Success Criteria - Equipment longevity</a></legend>
+									<div class="y">
+										<label class="title q" for="his-conformance3">Conformance status:</label>
+										<select class="his-conformance" id="his-conformance3">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="his-observe3">Observations:</label>
+										<textarea id="his-observe3" name="his-observe3" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#low-carbon-electricity">Success Criteria - Low-carbon electricity</a></legend>
+									<div class="y">
+										<label class="title q" for="his-conformance4">Conformance status:</label>
+										<select class="his-conformance" id="his-conformance4">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="his-observe4">Observations:</label>
+										<textarea id="his-observe4" name="his-observe4" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#remaining-emissions">Success Criteria - Remaining emissions</a></legend>
+									<div class="y">
+										<label class="title q" for="his-conformance5">Conformance status:</label>
+										<select class="his-conformance" id="his-conformance5">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="his-observe5">Observations:</label>
+										<textarea id="his-observe5" name="his-observe5" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#domain-names">Success Criteria - Domain names</a></legend>
+									<div class="y">
+										<label class="title q" for="his-conformance6">Conformance status:</label>
+										<select class="his-conformance" id="his-conformance6">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="his-observe6">Observations:</label>
+										<textarea id="his-observe6" name="his-observe6" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>4.2 - Optimize caching and support offline access</summary>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#caching-resources">Success Criteria - Caching resources</a></legend>
+									<div class="y">
+										<label class="title q" for="his-conformance7">Conformance status:</label>
+										<select class="his-conformance" id="his-conformance7">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="his-observe7">Observations:</label>
+										<textarea id="his-observe7" name="his-observe7" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#offline-access">Success Criteria - Offline access</a></legend>
+									<div class="y">
+										<label class="title q" for="his-conformance8">Conformance status:</label>
+										<select class="his-conformance" id="his-conformance8">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="his-observe8">Observations:</label>
+										<textarea id="his-observe8" name="his-observe8" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>4.3 - Reduce data transfer with compression</summary>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#server-side-compression">Success Criteria - Server-side compression</a></legend>
+									<div class="y">
+										<label class="title q" for="his-conformance9">Conformance status:</label>
+										<select class="his-conformance" id="his-conformance9">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="his-observe9">Observations:</label>
+										<textarea id="his-observe9" name="his-observe9" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#media-compression">Success Criteria - Media compression</a></legend>
+									<div class="y">
+										<label class="title q" for="his-conformance10">Conformance status:</label>
+										<select class="his-conformance" id="his-conformance10">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="his-observe10">Observations:</label>
+										<textarea id="his-observe10" name="his-observe10" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>4.4 - Setup necessary error pages and redirection links</summary>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#error-pages">Success Criteria - Error pages</a></legend>
+									<div class="y">
+										<label class="title q" for="his-conformance11">Conformance status:</label>
+										<select class="his-conformance" id="his-conformance11">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="his-observe11">Observations:</label>
+										<textarea id="his-observe11" name="his-observe11" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#redirection">Success Criteria - Redirection</a></legend>
+									<div class="y">
+										<label class="title q" for="his-conformance12">Conformance status:</label>
+										<select class="his-conformance" id="his-conformance12">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="his-observe12">Observations:</label>
+										<textarea id="his-observe12" name="his-observe12" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>4.5 - Avoid maintaining unnecessary virtualized environments or containers</summary>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#unused-environments">Success Criteria - Unused environments</a></legend>
+									<div class="y">
+										<label class="title q" for="his-conformance13">Conformance status:</label>
+										<select class="his-conformance" id="his-conformance13">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="his-observe13">Observations:</label>
+										<textarea id="his-observe13" name="his-observe13" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>4.6 - Use automation wisely</summary>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#task-automation">Success Criteria - Task automation</a></legend>
+									<div class="y">
+										<label class="title q" for="his-conformance14">Conformance status:</label>
+										<select class="his-conformance" id="his-conformance14">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="his-observe14">Observations:</label>
+										<textarea id="his-observe14" name="his-observe14" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#necessary-tasks">Success Criteria - Necessary tasks</a></legend>
+									<div class="y">
+										<label class="title q" for="his-conformance15">Conformance status:</label>
+										<select class="his-conformance" id="his-conformance15">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="his-observe15">Observations:</label>
+										<textarea id="his-observe15" name="his-observe15" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#automated-scaling">Success Criteria - Automated scaling</a></legend>
+									<div class="y">
+										<label class="title q" for="his-conformance16">Conformance status:</label>
+										<select class="his-conformance" id="his-conformance16">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="his-observe16">Observations:</label>
+										<textarea id="his-observe16" name="his-observe16" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#suspicious-activity-management">Success Criteria - Suspicious activity management</a></legend>
+									<div class="y">
+										<label class="title q" for="his-conformance17">Conformance status:</label>
+										<select class="his-conformance" id="his-conformance17">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="his-observe17">Observations:</label>
+										<textarea id="his-observe17" name="his-observe17" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>4.7 - Define the frequency of data refreshes</summary>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#refresh-frequency">Success Criteria - Refresh frequency</a></legend>
+									<div class="y">
+										<label class="title q" for="his-conformance18">Conformance status:</label>
+										<select class="his-conformance" id="his-conformance18">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="his-observe18">Observations:</label>
+										<textarea id="his-observe18" name="his-observe18" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>4.8 - Back up critical data at routine intervals</summary>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#data-backups">Success Criteria - Data backups</a></legend>
+									<div class="y">
+										<label class="title q" for="his-conformance19">Conformance status:</label>
+										<select class="his-conformance" id="his-conformance19">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="his-observe19">Observations:</label>
+										<textarea id="his-observe19" name="his-observe19" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>4.9 - Assess the impact and requirements of data processing</summary>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#carbon-shifting">Success Criteria - Carbon shifting</a></legend>
+									<div class="y">
+										<label class="title q" for="his-conformance20">Conformance status:</label>
+										<select class="his-conformance" id="his-conformance20">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="his-observe20">Observations:</label>
+										<textarea id="his-observe20" name="his-observe20" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#protocol-efficiency">Success Criteria - Protocol efficiency</a></legend>
+									<div class="y">
+										<label class="title q" for="his-conformance21">Conformance status:</label>
+										<select class="his-conformance" id="his-conformance21">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="his-observe21">Observations:</label>
+										<textarea id="his-observe21" name="his-observe21" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#event-driven-architecture">Success Criteria - Event-driven architecture</a></legend>
+									<div class="y">
+										<label class="title q" for="his-conformance22">Conformance status:</label>
+										<select class="his-conformance" id="his-conformance22">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="his-observe22">Observations:</label>
+										<textarea id="his-observe22" name="his-observe22" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#data-processing-efficiency">Success Criteria - Data processing efficiency</a></legend>
+									<div class="y">
+										<label class="title q" for="his-conformance23">Conformance status:</label>
+										<select class="his-conformance" id="his-conformance23">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="his-observe23">Observations:</label>
+										<textarea id="his-observe23" name="his-observe23" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#efficient-location">Success Criteria - Efficient location</a></legend>
+									<div class="y">
+										<label class="title q" for="his-conformance24">Conformance status:</label>
+										<select class="his-conformance" id="his-conformance24">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="his-observe24">Observations:</label>
+										<textarea id="his-observe24" name="his-observe24" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>4.10 - Use Content Delivery Networks (CDNs) when beneficial</summary>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#global-cdns">Success Criteria - Global CDNs</a></legend>
+									<div class="y">
+										<label class="title q" for="his-conformance25">Conformance status:</label>
+										<select class="his-conformance" id="his-conformance25">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="his-observe25">Observations:</label>
+										<textarea id="his-observe25" name="his-observe25" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#sustainability-commitment">Success Criteria - Sustainability commitment</a></legend>
+									<div class="y">
+										<label class="title q" for="his-conformance26">Conformance status:</label>
+										<select class="his-conformance" id="his-conformance26">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="his-observe26">Observations:</label>
+										<textarea id="his-observe26" name="his-observe26" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#inappropriate-resources">Success Criteria - Inappropriate resources</a></legend>
+									<div class="y">
+										<label class="title q" for="his-conformance27">Conformance status:</label>
+										<select class="his-conformance" id="his-conformance27">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="his-observe27">Observations:</label>
+										<textarea id="his-observe27" name="his-observe27" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>4.11 - Ensure infrastructure fits project requirements</summary>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#lowest-requirements">Success Criteria - Lowest requirements</a></legend>
+									<div class="y">
+										<label class="title q" for="his-conformance28">Conformance status:</label>
+										<select class="his-conformance" id="his-conformance28">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="his-observe28">Observations:</label>
+										<textarea id="his-observe28" name="his-observe28" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>4.12 - Store data according to the needs of your users</summary>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#remove-unused-data">Success Criteria - Remove unused data</a></legend>
+									<div class="y">
+										<label class="title q" for="his-conformance29">Conformance status:</label>
+										<select class="his-conformance" id="his-conformance29">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="his-observe29">Observations:</label>
+										<textarea id="his-observe29" name="his-observe29" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#lifecycle-management">Success Criteria - Lifecycle management</a></legend>
+									<div class="y">
+										<label class="title q" for="his-conformance30">Conformance status:</label>
+										<select class="his-conformance" id="his-conformance30">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="his-observe30">Observations:</label>
+										<textarea id="his-observe30" name="his-observe30" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#efficient-storage">Success Criteria - Efficient storage</a></legend>
+									<div class="y">
+										<label class="title q" for="his-conformance31">Conformance status:</label>
+										<select class="his-conformance" id="his-conformance31">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="his-observe31">Observations:</label>
+										<textarea id="his-observe31" name="his-observe31" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#optimized-logging">Success Criteria - Optimized logging</a></legend>
+									<div class="y">
+										<label class="title q" for="his-conformance32">Conformance status:</label>
+										<select class="his-conformance" id="his-conformance32">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="his-observe32">Observations:</label>
+										<textarea id="his-observe32" name="his-observe32" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#asset-downloads">Success Criteria - Asset downloads</a></legend>
+									<div class="y">
+										<label class="title q" for="his-conformance33">Conformance status:</label>
+										<select class="his-conformance" id="his-conformance33">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="his-observe33">Observations:</label>
+										<textarea id="his-observe33" name="his-observe33" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+						</div>
+					</details>
+					<details open>
+						<summary>Business Strategy and Product Management</summary>
+						<div class="guidelines">
+							<details>
+								<summary>5.1 - Have an ethical and sustainable product strategy</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#public-documents">Success Criteria - Public documents</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance1">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance1">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe1">Observations:</label>
+										<textarea id="bspm-observe1" name="bspm-observe1" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#achievements-and-compliance">Success Criteria - Achievements and compliance</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance2">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance2">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe2">Observations:</label>
+										<textarea id="bspm-observe2" name="bspm-observe2" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#governance-over-time">Success Criteria - Governance over time</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance3">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance3">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe3">Observations:</label>
+										<textarea id="bspm-observe3" name="bspm-observe3" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#technology-legislation">Success Criteria - Technology legislation</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance4">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance4">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe4">Observations:</label>
+										<textarea id="bspm-observe4" name="bspm-observe4" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>5.2 - Assign a sustainability advocate</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#advocate-for-sustainability">Success Criteria - Advocate for sustainability</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance5">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance5">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe5">Observations:</label>
+										<textarea id="bspm-observe5" name="bspm-observe5" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>5.3 - Inform, raise awareness, and train for sustainability</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#inform-and-aware">Success Criteria - Inform and aware</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance6">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance6">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe6">Observations:</label>
+										<textarea id="bspm-observe6" name="bspm-observe6" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#routine-training">Success Criteria - Routine training</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance7">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance7">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe7">Observations:</label>
+										<textarea id="bspm-observe7" name="bspm-observe7" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#active-participation">Success Criteria - Active participation</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance8">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance8">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe8">Observations:</label>
+										<textarea id="bspm-observe8" name="bspm-observe8" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#training-materials">Success Criteria - Training materials</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance9">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance9">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe9">Observations:</label>
+										<textarea id="bspm-observe9" name="bspm-observe9" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#incentivize-progress">Success Criteria - Incentivize progress</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance10">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance10">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe10">Observations:</label>
+										<textarea id="bspm-observe10" name="bspm-observe10" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>5.4 - Communicate the environmental impact of user choices</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#communication-of-impact">Success Criteria - Communication of impact</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance11">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance11">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe11">Observations:</label>
+										<textarea id="bspm-observe11" name="bspm-observe11" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>5.5 - Calculate the environmental impact</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#life-cycle-assessment">Success Criteria - Life-cycle assessment</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance12">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance12">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe12">Observations:</label>
+										<textarea id="bspm-observe12" name="bspm-observe12" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#competitor-impact">Success Criteria - Competitor impact</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance13">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance13">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe13">Observations:</label>
+										<textarea id="bspm-observe13" name="bspm-observe13" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#tooling-impact">Success Criteria - Tooling impact</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance14">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance14">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe14">Observations:</label>
+										<textarea id="bspm-observe14" name="bspm-observe14" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>5.6 - Define clear organizational sustainability goals and metrics</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#web-sustainability-goals">Success Criteria - Web sustainability goals</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance15">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance15">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe15">Observations:</label>
+										<textarea id="bspm-observe15" name="bspm-observe15" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>5.7 - Validate web sustainability efforts through external verification</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#obtaining-verification">Success Criteria - Obtaining verification</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance16">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance16">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe16">Observations:</label>
+										<textarea id="bspm-observe16" name="bspm-observe16" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#maintaining-verification">Success Criteria - Maintaining verification</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance17">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance17">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe17">Observations:</label>
+										<textarea id="bspm-observe17" name="bspm-observe17" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>5.8 - Support mandatory disclosures and reporting</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#policies-and-practices">Success Criteria - Policies and practices</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance18">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance18">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe18">Observations:</label>
+										<textarea id="bspm-observe18" name="bspm-observe18" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#impact-reports">Success Criteria - Impact reports</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance19">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance19">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe19">Observations:</label>
+										<textarea id="bspm-observe19" name="bspm-observe19" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#disclosure-reporting">Success Criteria - Disclosure reporting</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance20">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance20">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe20">Observations:</label>
+										<textarea id="bspm-observe20" name="bspm-observe20" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#impact-reduction">Success Criteria - Impact reduction</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance21">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance21">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe21">Observations:</label>
+										<textarea id="bspm-observe21" name="bspm-observe21" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>5.9 - Create one or more impact business models</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#theory-of-change">Success Criteria - Theory of change</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance22">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance22">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe22">Observations:</label>
+										<textarea id="bspm-observe22" name="bspm-observe22" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>5.10 - Follow a product management and maintenance strategy</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#management-and-maintenance">Success Criteria - Management and maintenance</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance23">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance23">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe23">Observations:</label>
+										<textarea id="bspm-observe23" name="bspm-observe23" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#planning-strategy">Success Criteria - Planning Strategy</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance24">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance24">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe24">Observations:</label>
+										<textarea id="bspm-observe24" name="bspm-observe24" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#resourcing-products">Success Criteria - Resourcing products</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance25">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance25">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe25">Observations:</label>
+										<textarea id="bspm-observe25" name="bspm-observe25" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#resource-measurement">Success Criteria - Resource measurement</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance26">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance26">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe26">Observations:</label>
+										<textarea id="bspm-observe26" name="bspm-observe26" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#failure-indicators">Success Criteria - Failure indicators</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance27">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance27">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe27">Observations:</label>
+										<textarea id="bspm-observe27" name="bspm-observe27" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>5.11 - Implement continuous improvement procedures</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#continuous-improvement">Success Criteria - Continuous improvement</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance28">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance28">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe28">Observations:</label>
+										<textarea id="bspm-observe28" name="bspm-observe28" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#retrospectives-conducted">Success Criteria - Retrospectives conducted</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance29">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance29">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe29">Observations:</label>
+										<textarea id="bspm-observe29" name="bspm-observe29" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#iterative-consideration">Success Criteria - Iterative consideration</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance30">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance30">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe30">Observations:</label>
+										<textarea id="bspm-observe30" name="bspm-observe30" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#functionality-decisions">Success Criteria - Functionality decisions</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance31">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance31">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe31">Observations:</label>
+										<textarea id="bspm-observe31" name="bspm-observe31" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>5.12 - Document updates and evolutions</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#feature-changes">Success Criteria - Feature changes</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance32">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance32">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe32">Observations:</label>
+										<textarea id="bspm-observe32" name="bspm-observe32" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>5.13 - Evaluate if a digital product or service is necessary</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#sustainable-development-goals">Success Criteria - Sustainable Development Goals</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance33">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance33">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe33">Observations:</label>
+										<textarea id="bspm-observe33" name="bspm-observe33" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#creation-evaluation">Success Criteria - Creation evaluation</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance34">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance34">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe34">Observations:</label>
+										<textarea id="bspm-observe34" name="bspm-observe34" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#obstacle-consideration">Success Criteria - Obstacle consideration</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance35">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance35">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe35">Observations:</label>
+										<textarea id="bspm-observe35" name="bspm-observe35" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>5.14 - Provide a supplier standards of practice document</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#vetting-potential-partners">Success Criteria - Vetting potential partners</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance36">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance36">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe36">Observations:</label>
+										<textarea id="bspm-observe36" name="bspm-observe36" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#collaborative-measurement">Success Criteria - Collaborative measurement</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance37">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance37">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe37">Observations:</label>
+										<textarea id="bspm-observe37" name="bspm-observe37" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#informative-partner-promotion">Success Criteria - Informative partner promotion</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance38">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance38">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe38">Observations:</label>
+										<textarea id="bspm-observe38" name="bspm-observe38" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>5.15 - Share economic benefits</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#living-wage">Success Criteria - Living wage</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance39">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance39">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe39">Observations:</label>
+										<textarea id="bspm-observe39" name="bspm-observe39" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#incentivisation">Success Criteria - Incentivisation</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance40">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance40">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe40">Observations:</label>
+										<textarea id="bspm-observe40" name="bspm-observe40" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#employee-benefits">Success Criteria - Employee benefits</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance41">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance41">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe41">Observations:</label>
+										<textarea id="bspm-observe41" name="bspm-observe41" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>5.16 - Share decision-making power with affected parties</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#decision-making">Success Criteria - Decision-making</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance42">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance42">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe42">Observations:</label>
+										<textarea id="bspm-observe42" name="bspm-observe42" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>5.17 - Use Diversity, Equity, Justice, Inclusion (DEJI) practices</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#deji-practices">Success Criteria - DEJI practices</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance43">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance43">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe43">Observations:</label>
+										<textarea id="bspm-observe43" name="bspm-observe43" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#deji-training">Success Criteria - DEJI training</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance44">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance44">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe44">Observations:</label>
+										<textarea id="bspm-observe44" name="bspm-observe44" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#deji-improvements">Success Criteria - DEJI improvements</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance45">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance45">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe45">Observations:</label>
+										<textarea id="bspm-observe45" name="bspm-observe45" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>5.18 - Promote responsible data practices</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#data-practices">Success Criteria - Data practices</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance46">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance46">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe46">Observations:</label>
+										<textarea id="bspm-observe46" name="bspm-observe46" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#data-ownership">Success Criteria - Data ownership</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance47">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance47">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe47">Observations:</label>
+										<textarea id="bspm-observe47" name="bspm-observe47" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#outdated-content">Success Criteria - Outdated content</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance48">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance48">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe48">Observations:</label>
+										<textarea id="bspm-observe48" name="bspm-observe48" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>5.19 - Establish responsible practices around AI and emerging or disruptive technologies</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#ai-and-data-collection">Success Criteria - AI (Artificial Intelligence) and data collection</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance49">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance49">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe49">Observations:</label>
+										<textarea id="bspm-observe49" name="bspm-observe49" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#business-adaptation">Success Criteria - Business adaptation</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance50">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance50">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe50">Observations:</label>
+										<textarea id="bspm-observe50" name="bspm-observe50" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#environmental-responsibilities">Success Criteria - Environmental responsibilities</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance51">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance51">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe51">Observations:</label>
+										<textarea id="bspm-observe51" name="bspm-observe51" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#automated-tooling">Success Criteria - Automated tooling</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance52">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance52">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe52">Observations:</label>
+										<textarea id="bspm-observe52" name="bspm-observe52" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#quantum-resilience">Success Criteria - Quantum resilience</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance53">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance53">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe53">Observations:</label>
+										<textarea id="bspm-observe53" name="bspm-observe53" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>5.20 - Adopt responsible financial practices</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#fuel-divestment">Success Criteria - Fuel divestment</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance54">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance54">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe54">Observations:</label>
+										<textarea id="bspm-observe54" name="bspm-observe54" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#responsible-finance">Success Criteria - Responsible finance</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance55">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance55">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe55">Observations:</label>
+										<textarea id="bspm-observe55" name="bspm-observe55" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>5.21 - Adopt organizational philanthropy practices</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#philanthropy-policy">Success Criteria - Philanthropy policy</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance56">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance56">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe56">Observations:</label>
+										<textarea id="bspm-observe56" name="bspm-observe56" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#voluntary-work">Success Criteria - Voluntary work</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance57">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance57">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe57">Observations:</label>
+										<textarea id="bspm-observe57" name="bspm-observe57" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>5.22 - Plan for a digital product or service's care and end-of-life</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#end-of-life-care">Success Criteria - End-of-life care</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance58">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance58">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe58">Observations:</label>
+										<textarea id="bspm-observe58" name="bspm-observe58" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>5.23 - Repair, reuse, refurbish, recycle or reduce e-waste</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#e-waste-management">Success Criteria - E-waste management</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance59">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance59">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe59">Observations:</label>
+										<textarea id="bspm-observe59" name="bspm-observe59" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#e-waste-policy">Success Criteria - E-waste policy</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance60">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance60">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe60">Observations:</label>
+										<textarea id="bspm-observe60" name="bspm-observe60" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#refurbishment-strategy">Success Criteria - Refurbishment strategy</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance61">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance61">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe61">Observations:</label>
+										<textarea id="bspm-observe61" name="bspm-observe61" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#right-to-repair">Success Criteria - Right to repair</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance62">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance62">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe62">Observations:</label>
+										<textarea id="bspm-observe62" name="bspm-observe62" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>5.24 - Define performance, environmental, and human budgets</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#environmental-budget">Success Criteria - Environmental budget</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance63">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance63">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe63">Observations:</label>
+										<textarea id="bspm-observe63" name="bspm-observe63" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#performance-budget">Success Criteria - Performance budget</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance64">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance64">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe64">Observations:</label>
+										<textarea id="bspm-observe64" name="bspm-observe64" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#human-budget">Success Criteria - Human budget</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance65">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance65">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe65">Observations:</label>
+										<textarea id="bspm-observe65" name="bspm-observe65" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#measurable-improvements">Success Criteria - Measurable improvements</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance66">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance66">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe66">Observations:</label>
+										<textarea id="bspm-observe66" name="bspm-observe66" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>5.25 - Use and contribute to open source</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#open-source-governance">Success Criteria - Open source governance</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance67">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance67">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe67">Observations:</label>
+										<textarea id="bspm-observe67" name="bspm-observe67" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#collaboration-and-contribution">Success Criteria - Collaboration and contribution</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance68">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance68">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe68">Observations:</label>
+										<textarea id="bspm-observe68" name="bspm-observe68" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+							<details>
+								<summary>5.26 - Create a business continuity and disaster recovery plan</summary>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#plan-of-action">Success Criteria - Plan of action</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance69">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance69">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe69">Observations:</label>
+										<textarea id="bspm-observe69" name="bspm-observe69" rows="5"></textarea>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend> <a href="https://www.w3.org/TR/web-sustainability-guidelines/#audience-awareness">Success Criteria - Audience awareness</a></legend>
+									<div class="y">
+										<label class="title q" for="bspm-conformance70">Conformance status:</label>
+										<select class="bspm-conformance" id="bspm-conformance70">
+											<option>Fully conformant</option>
+											<option>Partially conformant</option>
+											<option>Non conformant</option>
+											<option>Non present</option>
+											<option>Unable to assess</option>
+											<option selected>Not checked</option>
+										</select>
+									</div>
+									<div class="z">
+										<label class="title q" for="bspm-observe70">Observations:</label>
+										<textarea id="bspm-observe70" name="bspm-observe70" rows="5"></textarea>
+									</div>
+								</fieldset>
+							</details>
+						</div>
+					</details>
+					<h2>Additional Information</h2>
+					<div class="c p">
+						<label for="more">Provide any additional information related to conformity (e.g. a URL to a detailed progress report).</label>
+						<textarea id="more" name="more" rows="5"></textarea>
+					</div>
+				</details>
+				<details id="details">
+					<summary><strong>Approval and complaints process</strong><br> In this section you can add information about the formal approval of this sustainability report and, if applicable, any complaints escalation procedure.</summary>
+					<h2>Formal complaints</h2>
+					<div class="c">
+						<label for="complaints">Describe any formal complaints procedures</label>
+						<textarea id="complaints" name="complaints" rows="5"></textarea>
+					</div>
+					<h2>Approval of the sustainability report</h2>
+					<div class="c">
+						<label class="title" for="name">Name of person or department</label>
+						<em>(Example: "John Doe")</em>
+						<input type="text" id="name">
+					</div>
+					<div class="c spacer">
+						<label class="title" for="position">Position or function</label>
+						<em>(Example: "Director of Communication")</em>
+						<input type="text" id="position">
+					</div>
+				</details>
+				<a class="button" href="#preview">Preview results</a><input class="button" type="reset" value="Start again"><input type="submit" class="button" value="Import from JSON" data-action="import-json"><input type="submit" class="button" value="Export to JSON" data-action="export-json">
+			</form>
+		</section>
+		<section id="preview">
+			<a class="button" href="#generator">Back to the generator</a><a class="button" href="#">Download HTML</a><a class="button" href="#">Download markdown</a><a class="button" href="#">Export to JSON</a>
+		</section>
+		<footer>
+			<p class="copyright">Copyright, <span>2026</span></p>
+			<p class="build">Built by <a href="https://alexanderdawson.com">Alex Dawson</a>.</p>
+		</footer>
+	</body>
+</html>

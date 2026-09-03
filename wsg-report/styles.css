@@ -1,0 +1,279 @@
+@media screen {
+	.hide, section:not(:target), section h1, section table:first-of-type thead, div:has(#other:not(:checked)) + div, div:has(#other2:not(:checked)) + div, div:has(#other3:not(:checked)) + div, h1:has(~ #preview:target) .subtitle, h1:has(~ #generator #report:checked):has(~ #preview:target) .type-b, h1:has(~ #generator #stmt:checked):has(~ #preview:target) .type-a, form:has(#stmt:checked) #efforts {
+		content-visibility: hidden; height: 1px; left: -1000px; overflow: hidden; position: absolute; top: -1px; width: 1px; }
+	:root:not(:has(:target)) #generator, div:has(#other:checked) + div, div:has(#other2:checked) + div, div:has(#other3:checked) + div, section:target {
+		content-visibility: auto; height: auto; left: auto; overflow: unset; position: static; top: auto; width: 100%;
+		scroll-margin-top: 20em; }
+	h1, .otherText {
+		align-items: center; }
+	html {
+		background-color: #cfe8d0; }
+	body, details label:has(input):not(.otherText):hover {
+		background-color: #ffffff; }
+	body {
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		max-width: 900px;
+		margin: 4em auto;
+		padding: 4em; }
+	.button {
+		background-color: #336934;
+		border: 0;
+		color: #ffffff;
+		display: inline-block;
+		margin-right: 1em;
+		width: fit-content; }
+	form > details, section table:first-of-type tbody > tr, section table:not(:first-of-type) thead {
+		background-color: #f2f2f2; }
+	a {
+		border-bottom: 2px solid transparent;
+		color: #0000e4; }
+	.guidelines {
+		border: 1px solid #8f8f9d;
+		padding: 1em; }
+	form > details, section table:first-of-type tbody > tr, section table:not(:first-of-type) thead {
+		border: 1px solid #dddddd;
+		border-radius: 5px; }
+	table {
+		border-collapse: collapse; }
+	a:hover {
+		border-bottom-color: #0000e4; }
+	h1 a:hover {
+		border-bottom-color: #9b9b9e; }
+	body, button, .guidelines, details label:has(input):not(.otherText) {
+		border-radius: 8px; }
+	input, textarea {
+		box-sizing: border-box;
+		font-size: unset;
+		padding: 8px; }
+	h1 strong a, legend, .title, section h2, section h3, section dd strong {
+		color: #336934; }
+	section dt::after {
+		content: ":";
+		margin-right: 0.5em; }
+	.copyright::before {
+		content: "\00a9";
+		cursor: text;
+		padding-right: 0.2em; }
+	.button, summary, details label:has(input):not(.otherText), details label:has(input):not(.otherText) input {
+		cursor: pointer; }
+	#efforts details div {
+		display: block; }
+	h1, .otherText, #efforts .y, #efforts .z, #efforts fieldset:has(.y), details div, footer, section table:first-of-type tbody tr {
+		display: flex; }
+	section dl, section table:first-of-type tbody {
+		display: grid; }
+	h1:has(~ #generator:target) .subtitle {
+		display: initial; }
+	textarea {
+		field-sizing: content;
+		min-height: 6.5lh; }
+	.y {
+		flex-basis: calc(30% - 0.5em); }
+	.z {
+		flex-basis: calc(70% - 0.5em); }
+	.c, .y, .z, section table:first-of-type tbody tr {
+		flex-direction: column; }
+	details div, .otherText {
+		flex-grow: 1; }
+	details div, #efforts fieldset:has(.y) {
+		flex-wrap: wrap; }
+	body, .button, select {
+		font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif; }
+	.guidelines > details {
+		font-size: 0.8em; }
+	.button, select { 
+		font-size: 1em; }
+	h2, details > details {
+		font-size: 1.25em; }
+	section table:first-of-type tbody > tr td {
+		font-size: 2.5em; }
+	h1 strong, legend, .title, details > details, section dt {
+		font-weight: bold; }
+	section dl {
+		gap: 0.5em 0;
+		grid-template-columns: max-content 1fr; }
+	#efforts fieldset:has(.y) {
+		gap: 1em; }
+	section table:first-of-type tbody {
+		gap: 1rem;
+		grid-template-columns: repeat(3, minmax(0, 1fr)); }
+	.logo {
+		height: 1em;
+		flex-shrink: 0;
+		padding-right: 0.25em;
+		width: 1em; }
+	footer {
+		justify-content: center; }
+	section li {
+		line-height: 2; }
+	html:has(#preview:target) {
+		margin: 0 4em; }
+	footer p {
+		margin-bottom: unset; }
+	.button:first-of-type, section dd {
+		margin-left: unset; }
+	h1 {
+		margin-top: unset; }
+	.guidelines, .guidelines fieldset {
+		margin-top: 0.5em; }
+	.spacer, details > details, div:has(#moreStuff) ~ div {
+		margin-top: 1em; }
+	.button, form > details, .button:last-child, footer {
+		margin-top: 2em; }
+	body:has(#preview:target), label:not(.otherText), section table:first-of-type tbody tr {
+		max-width: unset; }
+	label:has(input), .guidelines details, table:not(:first-of-type) th, table:not(:first-of-type) td {
+		padding: 0.5em; }
+	form > details, .button {
+		padding: 1em; }
+	section table:first-of-type tbody > tr, section table:not(:first-of-type) thead {
+		padding: 1em 0.5em; }
+	.q {
+		padding-left: unset; }
+	.otherText input {
+		margin-left: 0.75em; }
+	.build, .copyright {
+		padding-left: 1em;
+		padding-right: 1em; }
+	section table:first-of-type tbody td, table:not(:first-of-type) td:not(:first-of-type) {
+		text-align: center; }
+	.button, a {
+		text-decoration: none; }
+	section table:first-of-type tbody th, section table:not(:first-of-type) td:not(:last-of-type) {
+		white-space: nowrap; }
+	section table:first-of-type tbody, table, .otherText input, label {
+		width: 100%; }
+}
+@media screen and (max-width: 1030px) {
+	body {
+		border-radius: 0;
+		max-width: none;
+		padding: 2em; }
+	body, html:has(#preview:target) {
+		margin: unset; }
+}
+@media screen and (max-width: 900px) {
+	section dl {
+		display: block; }
+	section table:first-of-type tbody {
+		grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media screen and (max-width: 775px) {
+	section table:not(:first-of-type) tbody tr:not(:has(td[colspan])) {
+		align-items: center; }
+	section table:not(:first-of-type) tbody tr:not(:has(td[colspan])) td {
+		box-sizing: border-box;
+		vertical-align: middle;
+		word-break: normal;
+		width: auto; }
+	section table:not(:first-of-type) thead tr, section table:not(:first-of-type) tbody tr:not(:has(td[colspan])) {
+		display: grid;
+		grid-template-columns: 65% 35%; }
+	section table:not(:first-of-type) thead th:last-child {
+		display: none;  }
+	section table:not(:first-of-type) thead {
+		display: table-header-group;  }
+	section table:not(:first-of-type) tbody tr:not(:has(td[colspan])) td:last-child {
+		grid-column: 1 / -1;
+		padding-top: 0.25em; }
+	section table:not(:first-of-type) tbody tr:not(:has(td[colspan])) td, section table:not(:first-of-type) td[colspan="3"] {
+		overflow-wrap: break-word; }
+	section table:not(:first-of-type) thead th, section table:not(:first-of-type) tbody tr:not(:has(td[colspan])) td, section table:not(:first-of-type) td[colspan="3"], section table:not(:first-of-type) tbody tr:not(:has(td[colspan])) td:last-child {
+		text-align: left;
+		white-space: normal; }
+	section table:not(:first-of-type), section table:not(:first-of-type) tbody tr:not(:has(td[colspan])) td:last-child, section table:not(:first-of-type) td[colspan="3"] {
+		width: 100%; }
+}
+@media screen and (max-width: 650px) {
+	form > fieldset label {
+		display: block; }
+}
+@media screen and (max-width: 600px) {
+	section table:not(:first-of-type) tbody tr:not(:has(td[colspan])) {
+		display: flex;
+		flex-direction: column; }
+	tr:not(:has(+ tr > td:only-child)) {
+		padding-bottom: 1em; }
+	section table:not(:first-of-type) tbody tr:not(:has(td[colspan])) td {
+		padding: 0;
+		width: 100%; }
+	table:not(:first-of-type) td {
+		padding: 1em 0; }
+}
+@media screen and (max-width: 550px) {
+	section table:first-of-type tbody {
+		grid-template-columns: repeat(1, minmax(0, 1fr)); }
+}
+@media screen and (max-width: 500px) {
+	label:has(input) {
+		padding: 0.5em 0; }
+	.guidelines {
+		padding: 0.5em; }
+	footer {
+		flex-direction: column-reverse;
+		text-align: center; }
+}
+@media (prefers-color-scheme: dark) {
+	html, details label:has(input):not(.otherText):hover {
+		background-color: #000000;
+		color: #dddddd; }
+	body, form > details, section table:first-of-type tbody > tr, section table:not(:first-of-type) thead, input, textarea, select {
+		background-color: #2f2e33;
+		color: #dddddd; }
+	h1 strong, section h2, legend, .title {
+		color: #00FF66; }
+	a {
+		color: #f5c344; }
+	svg {
+		fill: #dddddd; }
+}
+@media print {
+	section dt::after {
+		content: ":";
+		margin-right: 0.5em; }
+	.button, svg, #generator, .subtitle, section h1, table:first-of-type thead {
+		display: none; }
+	section table:first-of-type tbody tr, footer {
+		display: flex; }
+	dl, section table:first-of-type tbody {
+		display: grid; }
+	section table:first-of-type tbody tr {
+		flex-direction: column; }
+	body {
+		font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif; }
+	section table:first-of-type tbody > tr td {
+		font-size: 2.5em; }
+	dt {
+		font-weight: bold; }
+	dl {
+		gap: 0.5em 0;
+		grid-template-columns: max-content 1fr; }
+	section table:first-of-type tbody {
+		gap: 1rem;
+		grid-template-columns: repeat(3, minmax(0, 1fr)); }
+	footer {
+		justify-content: center; }
+	dd {
+		margin-left: unset; }
+   .build, .copyright {
+		padding-left: 1em;
+		padding-right: 1em; }
+	section table:first-of-type tbody > tr td, table:not(:first-of-type) td:not(:first-of-type) {
+		text-align: center; }
+	table {
+		width: 100%; }
+	section table:first-of-type tbody th, section table:not(:first-of-type) td:not(:last-of-type) {
+		white-space: nowrap; }
+}
+@media (prefers-reduced-motion: reduce), (update: slow) {
+	*:not(.safe-animation),
+	*:not(.safe-animation)::before,
+	*:not(.safe-animation)::after {
+		animation-delay: -1ms !important;
+		animation-duration: 1ms !important;
+		animation-iteration-count: 1 !important;
+		background-attachment: initial !important;
+		scroll-behavior: auto !important;
+		transition-delay: -1ms !important;
+		transition-duration: 1ms !important; }
+}
