@@ -138,7 +138,7 @@ document.querySelectorAll('.button').forEach(function (button) {
 			// At least one service type must be selected
 			if (!physicalChecked && !digitalChecked) {
 				event.preventDefault();
-				alert('Please select at least one service option.');
+				alert('Please select at least one option from question 6.');
 				return false; }
 			const resultCount = filterResults();
 			// No matching results
