@@ -69,7 +69,9 @@ function passesService(dl) {
 	const techInputs = techQuestion.querySelectorAll('input[name="tech"]');
 	function updateTechOptions() {
 		const noSelected = techQuestion.querySelector('input[name="uses"][value="no"]').checked;
-		techInputs.forEach(function (input) { input.disabled = noSelected; }); }
+		techInputs.forEach(function (input) {
+			if (noSelected) { input.checked = false; }
+			input.disabled = noSelected; }); }
 	techQuestion.querySelectorAll('input[name="uses"]').forEach(function (input) { input.addEventListener('change', updateTechOptions); });
 	document.querySelector('#questions form').addEventListener('reset', function () { setTimeout(updateTechOptions, 0); });
 	updateTechOptions();
@@ -131,6 +133,13 @@ document.querySelectorAll('.button').forEach(function (button) {
 		const buttonText = button.textContent.trim();
 		// View Results
 		if (buttonText === 'View results') {
+			const physicalChecked = document.querySelector('#data-service input[name="type"][value="physical"]').checked;
+			const digitalChecked = document.querySelector('#data-service input[name="type"][value="digital"]').checked;
+			// At least one service type must be selected
+			if (!physicalChecked && !digitalChecked) {
+				event.preventDefault();
+				alert('Please select at least one service option.');
+				return false; }
 			const resultCount = filterResults();
 			// No matching results
 			if (resultCount === 0) {
