@@ -119,7 +119,7 @@
 		content: "\00a9";
 		cursor: text;
 		padding-right: 0.2em; }
-	.build, .copyright {
+	.build, .repo, .copyright {
 		margin-bottom: unset;
 		padding-left: 1em;
 		padding-right: 1em; }
@@ -149,7 +149,7 @@
 		font-size: 1em; }
 	#data-tech > legend {
 		margin-bottom: 1em; }
-	#data-report {
+	legend ~ select {
 		margin-top: 1em; }
 	fieldset, legend, legend > label {
 		padding: unset; }
@@ -162,7 +162,7 @@
 	body, select {
 		background-color: #2f2e33;
 		color: #ffffff; }
-	h1 span {
+	h1 span, legend span {
 		color: #00FF66; }
 	a {
 		color: #f5c344; }

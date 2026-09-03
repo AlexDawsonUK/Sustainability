@@ -20,6 +20,7 @@
 		border: 0;
 		color: #ffffff;
 		display: inline-block;
+		font-weight: normal;
 		margin-right: 1em;
 		width: fit-content; }
 	form > details, section table:first-of-type tbody > tr, section table:not(:first-of-type) thead {
@@ -192,6 +193,8 @@
 	section table:not(:first-of-type) tbody tr:not(:has(td[colspan])) {
 		display: flex;
 		flex-direction: column; }
+	section table:not(:first-of-type) thead {
+		display: none; }
 	tr:not(:has(+ tr > td:only-child)) {
 		padding-bottom: 1em; }
 	section table:not(:first-of-type) tbody tr:not(:has(td[colspan])) td {
@@ -220,7 +223,7 @@
 	body, form > details, section table:first-of-type tbody > tr, section table:not(:first-of-type) thead, input, textarea, select {
 		background-color: #2f2e33;
 		color: #dddddd; }
-	h1 strong, section h2, legend, .title {
+	h1 strong, section h2, section h3, legend, .title, section dd strong {
 		color: #00FF66; }
 	a {
 		color: #f5c344; }
