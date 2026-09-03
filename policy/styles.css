@@ -18,7 +18,8 @@
 		align-items: center;
 		display: flex;
 		gap: 0.25em;
-		margin: unset; }
+		margin: unset;
+		text-align: center; }
 	.logo {
 		height: 1em;
 		flex-shrink: 0;

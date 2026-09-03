@@ -64,6 +64,8 @@
 		padding-left: unset; }
 	body, h1, h2 {
 		margin: unset; }
+	dt {
+		padding-bottom: 0.5em; }
 	dd {
 		margin-left: unset; }
 	nav a:focus-visible {

@@ -30,7 +30,7 @@
 	.guidelines {
 		border: 1px solid #8f8f9d;
 		padding: 1em; }
-	form > details, section table:first-of-type tbody > tr, section table:not(:first-of-type) thead {
+	form > details, section table:first-of-type tbody > tr, section table:not(:first-of-type) thead, input, textarea {
 		border: 1px solid #dddddd;
 		border-radius: 5px; }
 	table {
